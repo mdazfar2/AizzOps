@@ -22,8 +22,25 @@
 
 <hr/>
 
-<a name="Welcome to AizzOps "></a>
+<a name="Welcome to AizzOps"></a>
 
 # Welcome to AizzOps 👋
 Welcome to AizzOps, my personal portfolio website showcasing my journey and projects in DevOps. Here you'll find detailed information about my skills, experiences, and the various projects I've worked on. Feel free to explore and connect with me!
+
+<a name="demo"></a>
+## 👩‍💻 Live demo 
+
+Visit https://www.azfaralam.com to see the live demo!
+
+## Table of Contents 🧾
+
+- [📚 Tech stack](##tech-stack)
+- [🔍 About Me](##about-me)
+- [🛠️ Skills](##skills) 
+- [📁 Projects](##projects) 
+- [🌐 Socials](##contact)
+- [🤝 Contributing Guidelines](##contributing-guidelines)
+- [🔖 License](##license)
+- [✨Contributor](##contributor)
+- [⭐ Support](##support)
 
