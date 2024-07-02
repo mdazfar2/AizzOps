@@ -1,4 +1,5 @@
-![Azfar Portfolio](https://github.com/mdazfar2/AizzOps/assets/100375390/d445ef8c-1a1a-4693-910c-09c12548580a)
+![Azfar Portfolioo](https://github.com/mdazfar2/AizzOps/assets/100375390/44bb4892-2b8e-42ce-9de9-b5b6ae3c0964)
+
 
 <!-------------------------------------------------------------------------------------------------------------------------------------->
 
