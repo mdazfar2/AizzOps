@@ -16,7 +16,6 @@
 ![GitHub issues](https://img.shields.io/github/issues/mdazfar2/AizzOps)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/mdazfar2/AizzOps)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/mdazfar2/AizzOps)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/mdazfar2/AizzOps)
 
 </p>
 </div>
