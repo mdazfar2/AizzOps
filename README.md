@@ -38,7 +38,7 @@ Visit https://www.azfaralam.com to see the live demo!
 
 ## Table of Contents 🧾
 
-- [Tech stack 📚](#tech-stack-)
+- [📚 Tech stack](#tech-stack-)
 - [🔍 About Me](##about-me)
 - [🛠️ Skills](##skills) 
 - [📁 Projects](##projects) 
