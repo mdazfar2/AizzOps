@@ -38,7 +38,7 @@ Visit https://www.azfaralam.com to see the live demo!
 
 ## Table of Contents 🧾
 
-- [📚 Tech stack](##tech-stack)
+- [📚 Tech stack](#tech-stack-)
 - [🔍 About Me](##about-me)
 - [🛠️ Skills](##skills) 
 - [📁 Projects](##projects) 
@@ -47,4 +47,16 @@ Visit https://www.azfaralam.com to see the live demo!
 - [🔖 License](##license)
 - [✨Contributor](##contributor)
 - [⭐ Support](##support)
+
+<!----------------    Technology Used                  ----------------------------------------------------------------------------------->
+
+
+## Tech stack 📚
+
+<p>
+
+ <a href="https://www.w3schools.com/html/"> <img src="https://img.icons8.com/color/70/000000/html-5--v1.png" alt="HTML" /></a>
+  <a href="https://www.w3schools.com/css/"> <img src="https://img.icons8.com/color/70/000000/css3.png" alt="CSS" /></a>
+  <a href="https://www.w3schools.com/js/"><img src="https://img.icons8.com/color/70/000000/javascript--v1.png" alt="JS" /></a>
+</p>
 
