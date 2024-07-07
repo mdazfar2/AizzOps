@@ -38,7 +38,7 @@ Visit https://www.azfaralam.com to see the live demo!
 
 ## Table of Contents 🧾
 
-- [Technology Used🚀](#technology-used)
+- [Tech stack 📚](#tech-stack-)
 - [🔍 About Me](##about-me)
 - [🛠️ Skills](##skills) 
 - [📁 Projects](##projects) 
@@ -51,7 +51,7 @@ Visit https://www.azfaralam.com to see the live demo!
 <!----------------    Technology Used                  ----------------------------------------------------------------------------------->
 
 
-<h2>Technology Used🚀</h2>
+## Tech stack 📚
 
 <p>
 
