@@ -66,3 +66,19 @@ Visit https://www.azfaralam.com to see the live demo!
 ## About me 🔍
 
 I am Azfar Alam, a DevOps Engineer passionate about integrating technologies and enhancing the DevOps journey. As the founder of HelpOps-Hub, I created a platform to share solutions and prevent others from struggling with DevOps errors. I specialize in Linux, Kubernetes, AWS, Docker, Jenkins, and more, constantly seeking to upskill and innovate in the DevOps industry.
+
+<!----------------    Skills                ----------------------------------------------------------------------------------->
+
+## Skills
+
+- **Cloud**: AWS, Azure
+- **Operating Systems**: Linux (Amazon & Ubuntu), Windows, Mac
+- **SCM**: Git, GitHub, Bitbucket
+- **Scripting Languages**: Bash, Shell Script, YAML
+- **Application/Web Servers**: Nginx, Apache, Tomcat
+- **IAAC Tools**: Terraform
+- **Configuration Management**: Ansible
+- **CI/CD Tools**: Jenkins, GitHub Actions, ArgoCD, CircleCI, GitLab Runner, Azure Pipeline
+- **Containerization Tools**: Docker, Docker Hub, Kubernetes
+- **Service Mesh & Microservices**: Istio
+- **Monitoring and Logging Tools**: Grafana, Prometheus, Nagios, Splunk
