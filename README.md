@@ -69,7 +69,7 @@ I am Azfar Alam, a DevOps Engineer passionate about integrating technologies and
 
 <!----------------    Skills                ----------------------------------------------------------------------------------->
 
-## Skills
+## Skills 🛠️
 
 - **Cloud**: AWS, Azure
 - **Operating Systems**: Linux (Amazon & Ubuntu), Windows, Mac
@@ -82,3 +82,23 @@ I am Azfar Alam, a DevOps Engineer passionate about integrating technologies and
 - **Containerization Tools**: Docker, Docker Hub, Kubernetes
 - **Service Mesh & Microservices**: Istio
 - **Monitoring and Logging Tools**: Grafana, Prometheus, Nagios, Splunk
+
+<!----------------    Projects                ----------------------------------------------------------------------------------->
+
+
+## Projects 📁
+
+### [Project 1: Deploying Netflix Clone with DevSecOps](https://github.com/mdazfar2/DevSecOps-CICD-Pipeline-NetflixClone)
+Deploy a Netflix clone application using modern DevOps practices and tools. In this project, I leverage Jenkins for Continuous Integration and Continuous Deployment (CI/CD), Docker for containerization, and integrating different tools with each other, Kubernetes for orchestration, and monitoring tools like Grafana, Prometheus, and Node Exporter for observability.
+
+### [Project 2: Automated CI/CD Pipeline with Docker and Jenkins-SpaceWeb](https://github.com/mdazfar2/Automated-CI-CD-Pipeline-Space-Web)
+SpaceWeb is a demonstration project that showcases the simplicity and efficiency of automating the deployment process for a static website using Docker Compose and Jenkins CI/CD pipeline. This means that when a developer makes any changes to the code through GitHub, all the code will automatically deploy to the container without us having to click on anything. We are making the process easier and automatic using GitHub Webhook.
+
+### [Project 3: Deploying Spring Boot Java App with GitOps](https://github.com/mdazfar2/maven-jenkins-ArgoCD)
+This is a simple Spring Boot-based Java app that can be built using Maven. This application is deployed onto Kubernetes using GitOps ArgoCD.
+
+### [Project 4: Azure WebApp Github Actions](https://github.com/mdazfar2/Azure-WebApp-Github-Actions)
+It is a GitHub repository setup with automated workflows using GitHub Actions. This integration allows for continuous deployment to Azure Web App, ensuring effortless updates and seamless CI/CD for your web application.
+
+### [Project 3: Deploying Three Tier App with Docker and Docker-compose](https://github.com/mdazfar2/three-tier-deploy-wanderlustApp)
+This three-tier travel app, powered by React.js, Node.js, and MongoDB, is your gateway to discovering exciting destinations, seamlessly deployed on AWS, Docker and Docker-compose.
