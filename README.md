@@ -39,7 +39,7 @@ Visit https://www.azfaralam.com to see the live demo!
 ## Table of Contents 🧾
 
 - [📚 Tech stack](#tech-stack-)
-- [🔍 About Me](##about-me)
+- [🔍 About Me](##about-me-)
 - [🛠️ Skills](##skills) 
 - [📁 Projects](##projects) 
 - [🌐 Socials](##contact)
@@ -60,3 +60,8 @@ Visit https://www.azfaralam.com to see the live demo!
   <a href="https://www.w3schools.com/js/"><img src="https://img.icons8.com/color/70/000000/javascript--v1.png" alt="JS" /></a>
 </p>
 
+
+<!----------------    About me                 ----------------------------------------------------------------------------------->
+
+## About me 🔍
+I am Azfar Alam, a DevOps Engineer passionate about integrating technologies and enhancing the DevOps journey. As the founder of HelpOps-Hub, I created a platform to share solutions and prevent others from struggling with DevOps errors. I specialize in Linux, Kubernetes, AWS, Docker, Jenkins, and more, constantly seeking to upskill and innovate in the DevOps industry.
