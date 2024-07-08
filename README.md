@@ -102,3 +102,10 @@ It is a GitHub repository setup with automated workflows using GitHub Actions. T
 
 ### [Project 3: Deploying Three Tier App with Docker and Docker-compose](https://github.com/mdazfar2/three-tier-deploy-wanderlustApp)
 This three-tier travel app, powered by React.js, Node.js, and MongoDB, is your gateway to discovering exciting destinations, seamlessly deployed on AWS, Docker and Docker-compose.
+
+<!----------------    Socials                ----------------------------------------------------------------------------------->
+
+
+## Socials 🌐
+
+
