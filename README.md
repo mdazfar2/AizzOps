@@ -108,4 +108,60 @@ This three-tier travel app, powered by React.js, Node.js, and MongoDB, is your g
 
 ## Socials 🌐
 
+<div align="center">
+  <a href="http://www.linkedin.com/in/md-azfar-alam"><img src="https://img.shields.io/badge/linkedin-0A0209?style=for-the-badge&logo=linkedin&logoColor=d5d5d5" /></a>
+  <br>
+  <a href="https://medium.com/@azfaralam/"><img src="https://img.shields.io/badge/-medium-d5d5d5?style=for-the-badge&logo=LeetCode&logoColor=0A0209"/></a>
+  <a href="https://discordapp.com/users/877531143610708028"><img src="https://img.shields.io/badge/Discord-d5d5d5?style=for-the-badge&logo=discord&logoColor=0A0209" alt="Azfar Alam#6950" > 
+  <br> 
+  <a href="https://www.facebook.com/mdazfar2/"><img src="https://img.shields.io/badge/facebook-0A0209?style=for-the-badge&logo=facebook&logoColor=d5d5d5" /></a>
+  <a href="https://app.daily.dev/azfaralam/"><img src="https://img.shields.io/badge/daily.dev-0A0209?style=for-the-badge&logo=daily.dev&logoColor=d5d5d5" /></a>
+  <a href="https://twitter.com/AzfarAlam22"><img src="https://img.shields.io/badge/twitter-0A0209?style=for-the-badge&logo=twitter&logoColor=d5d5d5" /></a> 
+  <br>
+  <a href="https://azfaralam.hashnode.dev/"><img src="https://img.shields.io/badge/hashnode-d5d5d5?style=for-the-badge&logo=hashnode&logoColor=0A0209"/></a>
+  <a href="mdazfaralam440@gmail.com"><img src="https://img.shields.io/badge/Gmail-d5d5d5?style=for-the-badge&logo=gmail&logoColor=0A0209" /></a>
+  <a href="https://instagram.com/azfarxx_?utm_source=qr&igshid=OGIxMTE0OTdkZA=="><img src="https://img.shields.io/badge/instagram-d5d5d5?style=for-the-badge&logo=instagram&logoColor=0A0209"/></a>
+  
+</div>
+
+
+<!----------------    Contributing Guidelines                ----------------------------------------------------------------------------------->
+
+<div align="left">
+<h2><font size="6"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Handshake" width="40" height="40" /> Want to Contribute? </font></h2>
+</div>
+<br>
+
+I welcome contributions to AizzOps! If you're interested in contributing, please follow [CONTRIBUTING guidelines](https://github.com/mdazfar2/AizzOps/blob/main/CONTRIBUTING.md) to ensure a smooth and collaborative process:
+
+### How to Contribute
+1. **Fork the Repository**: Click the "Fork" button at the top right corner of this repository to create your own copy.
+2. **Clone Your Fork**: Clone your forked repository to your local machine using the following command:
+
+    ```sh
+    git clone https://github.com/your-username/aizzops.git
+    ```
+3. **Create a Branch**: Create a new branch for your feature or bug fix.
+    ```sh
+    git checkout -b <ur branch name>
+    ```
+4. **Make Changes**: Make your changes to the codebase.
+5. **Commit Changes**: Commit your changes with a descriptive commit message.
+    ```sh
+    git status
+    git add .
+    git status
+    git commit -m "Add feature: description of your feature"
+    ```
+6. **Push to Your Fork**: Push your changes to your forked repository.
+    ```sh
+    git push origin <ur branch name>
+    ```
+7. **Create a Pull Request**: Open a pull request to the `main` branch of the original repository. Provide a clear description of the changes and any related issue numbers.
+
+### Code of Conduct
+
+Please note that we have a [Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you agree to abide by its terms.
+
+
 
