@@ -134,7 +134,7 @@ This three-tier travel app, powered by React.js, Node.js, and MongoDB, is your g
 
 I welcome contributions to AizzOps! If you're interested in contributing, please follow [CONTRIBUTING guidelines](https://github.com/mdazfar2/AizzOps/blob/main/CONTRIBUTING.md) to ensure a smooth and collaborative process:
 
-### How to Contribute
+### How to Contribute 🤔
 1. **Fork the Repository**: Click the "Fork" button at the top right corner of this repository to create your own copy.
 2. **Clone Your Fork**: Clone your forked repository to your local machine using the following command:
 
