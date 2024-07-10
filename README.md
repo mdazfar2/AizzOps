@@ -134,31 +134,6 @@ This three-tier travel app, powered by React.js, Node.js, and MongoDB, is your g
 
 I welcome contributions to AizzOps! If you're interested in contributing, please follow [CONTRIBUTING guidelines](https://github.com/mdazfar2/AizzOps/blob/main/CONTRIBUTING.md) to ensure a smooth and collaborative process:
 
-### How to Contribute 🤔
-1. **Fork the Repository**: Click the "Fork" button at the top right corner of this repository to create your own copy.
-2. **Clone Your Fork**: Clone your forked repository to your local machine using the following command:
-
-    ```sh
-    git clone https://github.com/your-username/aizzops.git
-    ```
-3. **Create a Branch**: Create a new branch for your feature or bug fix.
-    ```sh
-    git checkout -b <ur branch name>
-    ```
-4. **Make Changes**: Make your changes to the codebase.
-5. **Commit Changes**: Commit your changes with a descriptive commit message.
-    ```sh
-    git status
-    git add .
-    git status
-    git commit -m "Add feature: description of your feature"
-    ```
-6. **Push to Your Fork**: Push your changes to your forked repository.
-    ```sh
-    git push origin <ur branch name>
-    ```
-7. **Create a Pull Request**: Open a pull request to the `main` branch of the original repository. Provide a clear description of the changes and any related issue numbers.
-
 
 <!----------------     License                ----------------------------------------------------------------------------------->
 
