@@ -34,7 +34,7 @@ Welcome to AizzOps! Azfar's personal portfolio website showcases his journey and
 <a name="demo"></a>
 ## 👩‍💻 Live demo 
 
-Visit https://www.azfaralam.com to see the live demo!
+Fixing project issues, will share portfolio link soon after deploy. Check back later! Thank you.:)
 
 ## Table of Contents 🧾
 
