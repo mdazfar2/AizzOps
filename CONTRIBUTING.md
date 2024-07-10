@@ -1,25 +1,65 @@
-# Contributing to AizzOps
+# AizzOps Contributing Guidelines
+Thank you for taking the time to contribute on my portfolio. Your help is essential for keeping it great.
 
-🎉 Thank you for considering contributing to AizzOps! 🎉
+Please take a moment to read the following guidelines before contributing:
 
-We welcome contributions from everyone. By contributing, you help us improve and enhance AizzOps, making it better for everyone. Please take a moment to review these guidelines to ensure a smooth and collaborative process.
+> **⚠️IMPORTANT**
+>
+> **Pull Requests _having no issue associated_ with them _will not be accepted_. Firstly get an issue assigned, whether it's already opened or raised by you, and then create a Pull Request.**
+>
+> **An automated process has been implemented to ensure the timely management of Pull Requests (PRs) on this platform.**
+>
+> **PRs that have been open for a duration exceeding 45 days will be automatically closed, so please plan accordingly.**
 
-## Table of Contents
+## Prerequisites ⚠️
 
-- [📝 Code of Conduct](#code-of-conduct)
-- [🌟 How to Contribute](#how-to-contribute)
-  - [🐞 Reporting Bugs](#reporting-bugs)
-  - [💡 Suggesting Features](#suggesting-features)
-  - [🔧 Submitting Pull Requests](#submitting-pull-requests)
-- [🎨 Style Guide](#style-guide)
-- [💬 Commit Messages](#commit-messages)
-- [📜 License](#license)
+- Open Source Etiquette: If you've never contributed to an open source project before, have a read of [Basic etiquette](https://developer.mozilla.org/en-US/docs/MDN/Community/Open_source_etiquette) for open source projects.
 
-## 📝 Code of Conduct
+- Basic familiarity with Git and GitHub: If you are also new to these tools, visit [GitHub for complete beginners](https://developer.mozilla.org/en-US/docs/MDN/Contribute/GitHub_beginners) for a comprehensive introduction to them.
 
-Please note that this project is released with a [Code of Conduct](https://github.com/mdazfar2/AizzOps/blob/main/CODE_OF_CONDUCT.md). By participating in this project, you agree to abide by its terms.
+---
 
-## 🌟 How to Contribute
+## How to Contribute 🤔
+
+To get started, look at the existing [**create a new issue**](https://github.com/mdazfar2/AizzOps/issues/new)!
+
+### Setup guidelines 🪜
+
+**Follow these steps to setup HelpOps-Hub on your local machine 👇**
+We love pull requests! If you have a fix or a feature, please follow these steps:
+1. **🍴 [Fork](github.com/mdazfar2/AizzOps) the Repository**: Click the "Fork" button at the top right corner of this repository.
+2. **📂 Clone Your Fork**: Clone your forked repository to your local machine:
+   
+    ```sh
+    git clone https://github.com/your-username/aizzops.git
+    ```
+3. **🌿 Create a Branch**: Create a new branch for your feature or bug fix:
+    ```sh
+    git checkout -b <ur branch>
+    ```
+4. **🛠️ Make Changes**: Make your changes to the codebase.
+5. **💾 Commit Changes**: Commit your changes with a descriptive commit message:
+    ```sh
+    git commit -m "your commit message here"
+    ```
+6. **🚀 Push to Your Fork**: Push your changes to your forked repository:
+    ```sh
+    git push origin <ur branch>
+    ```
+7. Go to your forked repository on GitHub and click on `Compare & pull request`.
+8. Add an appropriate title and description to your pull request explaining your changes and efforts done.
+9. Click on `Create pull request`.
+10. Congrats! 🥳 You've made your first pull request to this project repo.
+11. Wait for your pull request to be reviewed and if required suggestions would be provided to improve it.
+12. Celebrate 🥳 your success after your pull request is merged successfully.
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<h2>Code Of Conduct📑</h2>
+
+This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/mdazfar2/AizzOps/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+
 
 ### 🐞 Reporting Bugs
 
@@ -40,27 +80,7 @@ We welcome suggestions for new features! If you have an idea, please create an i
 
 ### 🔧 Submitting Pull Requests
 
-We love pull requests! If you have a fix or a feature, please follow these steps:
-1. **🍴 [Fork](github.com/mdazfar2/AizzOps) the Repository**: Click the "Fork" button at the top right corner of this repository.
-2. **📂 Clone Your Fork**: Clone your forked repository to your local machine:
-   
-    ```sh
-    git clone https://github.com/your-username/aizzops.git
-    ```
-3. **🌿 Create a Branch**: Create a new branch for your feature or bug fix:
-    ```sh
-    git checkout -b <ur branch>
-    ```
-4. **🛠️ Make Changes**: Make your changes to the codebase.
-5. **💾 Commit Changes**: Commit your changes with a descriptive commit message:
-    ```sh
-    git commit -m "Add feature: description of your feature"
-    ```
-6. **🚀 Push to Your Fork**: Push your changes to your forked repository:
-    ```sh
-    git push origin <ur branch>
-    ```
-7. **🔄 Create a Pull Request**: Open a pull request to the `main` branch of the original repository. Provide a clear description of the changes and any related issue numbers.
+
 
 ## 🎨 Style Guide
 
