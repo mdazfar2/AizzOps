@@ -159,9 +159,32 @@ I welcome contributions to AizzOps! If you're interested in contributing, please
     ```
 7. **Create a Pull Request**: Open a pull request to the `main` branch of the original repository. Provide a clear description of the changes and any related issue numbers.
 
-### Code of Conduct
 
-Please note that we have a [Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you agree to abide by its terms.
-
+<!----------------     License                ----------------------------------------------------------------------------------->
 
 
+
+## License 🔖
+
+<table>
+  <tr>
+     <td>
+       <p align="center"> <img src="(https://github.com/mdazfar2/AizzOps/assets/100375390/10e99569-3759-4a3f-bd5a-dace2f2ab2a7" width="80%"></img>
+    </td>
+    <td> 
+      <img src="https://img.shields.io/badge/apache-license2.0-yellow.svg"/> <br> 
+AizzOps is licensed under the terms of the Apache License 2.0. check out <a href="./LICENSE">Apache 2.0</a> for details. <img width=2300/>
+    </td>
+  </tr>
+</table>
+
+<a name="support"></a>
+
+
+<!----------------     Support                ----------------------------------------------------------------------------------->
+
+
+## Support ⭐
+
+- 💰 Become [Sponsor](https://github.com/sponsors/mdazfar2)!
+- ⭐ Star our [Repo](https://github.com/mdazfar2/AizzOps)
