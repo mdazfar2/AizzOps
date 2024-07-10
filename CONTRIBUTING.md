@@ -17,7 +17,7 @@ We welcome contributions from everyone. By contributing, you help us improve and
 
 ## 📝 Code of Conduct
 
-Please note that this project is released with a [Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you agree to abide by its terms.
+Please note that this project is released with a [Code of Conduct](https://github.com/mdazfar2/AizzOps/blob/main/CODE_OF_CONDUCT.md). By participating in this project, you agree to abide by its terms.
 
 ## 🌟 How to Contribute
 
@@ -87,7 +87,7 @@ Write clear and meaningful commit messages to describe your changes. Here’s a 
 
 ## 📜 License
 
-By contributing, you agree that your contributions will be licensed under the [MIT License](LICENSE).
+By contributing, you agree that your contributions will be licensed under the [Apache-2.0 License](https://github.com/mdazfar2/AizzOps/blob/main/LICENSE).
 
 ---
 
