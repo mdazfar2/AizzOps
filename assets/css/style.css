@@ -5,6 +5,11 @@
  * Version: 1.0
  */
 
+/* Popup container */
+
+.popup{
+  display: none;
+}
 
 /* CUSTOM RESETS
 ================================================== */

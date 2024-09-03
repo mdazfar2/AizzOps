@@ -950,7 +950,7 @@
     <div class="container">
         <h2>CONTACT ME</h2>
         <p class="section-subtitle"><span>Here i am</span></p>
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form id="contact-form">
             <input type="hidden" name="access_key" value="00f1ecc5-2fec-4926-a740-b8bb18632ca2">
             <div class="row">
                 <div class="col-md-4">
@@ -1002,7 +1002,14 @@
 
     </main><!-- /#main -->
     <!-- End Main content -->
-
+<!-- Popup Modal -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="popup-close" onclick="closePopup()">&times;</span>
+      <p id="popup-message"></p>
+    </div>
+  </div>
+  
     <!-- Footer --> 
     <footer id="colophon" class="site-footer">
 
@@ -1230,7 +1237,7 @@
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
-
+   
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -1257,9 +1264,59 @@
 
     <!-- Touchswipe JS -->
     <script src="assets/js/touchswipe.min.js"></script>
-
+    <div style="position: fixed;bottom: 20px;width: 100vw;" class="popup" id="popup1"  >
+        <p style="margin: auto;width: 300px;background-color: rgb(55, 203, 55);color: white;padding: 20px;text-align: center;border-radius: 10px;">
+            Message has Been Sent Successfully !!
+        </div>
+    </div>
+    <div style="position: fixed;bottom: 20px;width: 100vw;" class="popup" id="popup2"  >
+        <p style="margin: auto;width: 300px;background-color: rgb(254, 40, 40);color: white;padding: 20px;text-align: center;border-radius: 10px;">
+           Oops ! Please Try again . 
+        </div>
+    </div>
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
-  
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+    <script>
+        (function() {
+          emailjs.init("1sqDCzCuioBrTOZ0z"); // Replace with your EmailJS User ID
+        })();
+      </script>
+      <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+      
+          // Retrieve form values
+          const formData = new FormData(event.target);
+      
+          // Convert FormData to an object
+          const data = {};
+          formData.forEach((value, key) => {
+            data[key] = value;
+          });
+      
+          // Send email using EmailJS
+          emailjs.send('service_9imiaoa', 'template_554o4ye', data)
+            .then(function(response) {
+                document.getElementById("popup1").style.display="block"
+                document.getElementById("popup1")
+                setTimeout(()=>{
+                    document.getElementById("popup1").style.display="none"
+                },2000)
+            }, function(error) {
+              
+              document.getElementById("popup2").style.display="block"
+                setTimeout(()=>{
+                    document.getElementById("popup3").style.display="none"
+
+                },[])
+            });
+        });
+ 
+      </script>
+      
 </body>
 </html>
