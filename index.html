@@ -1306,6 +1306,10 @@
                 setTimeout(()=>{
                     document.getElementById("popup1").style.display="none"
                 },2000)
+                Array.from(document.getElementsByClassName("form-control")).forEach((e)=>{
+                    e.value=""
+                })
+
             }, function(error) {
               
               document.getElementById("popup2").style.display="block"
