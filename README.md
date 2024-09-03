@@ -39,14 +39,14 @@ Fixing project issues, will share portfolio link soon after deploy. Check back l
 ## Table of Contents 🧾
 
 - [📚 Tech stack](#tech-stack-)
-- [🔍 About me](#about-me)
-- [🛠️ Skills](##skills) 
-- [📁 Projects](##projects) 
-- [🌐 Socials](##contact)
-- [🤝 Contributing Guidelines](##contributing-guidelines)
-- [🔖 License](##license)
-- [✨Contributor](##contributor)
-- [⭐ Support](##support)
+- [🔍 About me](#about-me-)
+- [🛠️ Skills](#skills-) 
+- [📁 Projects](#projects-) 
+- [🌐 Socials](#contact-)
+- [🤝 Contributing Guidelines](#contributing-guidelines-)
+- [🔖 License](#license-)
+- [✨Contributor](#contributor-)
+- [⭐ Support](#support-)
 
 <!----------------    Technology Used                  ----------------------------------------------------------------------------------->
 
