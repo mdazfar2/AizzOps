@@ -117,8 +117,8 @@ html, body {
 .big-rectangle {
   position: absolute;
   right: auto;
-  top: 50%;
-  left: 50%;
+  top: 55%;
+  left: 55%;
   margin: 0 auto;
   width: 230px;
   height: 230px;
@@ -1306,7 +1306,7 @@ html, body {
 }
 
 .review .img-res {
-  max-width: 150%;
+  max-width: 142%;
   max-height: 150%;
 }
 
