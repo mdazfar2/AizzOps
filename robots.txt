@@ -15,4 +15,4 @@ Disallow: /static/
 Disallow: /build/
 
 # Specify the location of your XML sitemap
-Sitemap: azfaralam.xyz/sitemap.xml
+Sitemap: azfaralam.vercel.app/sitemap.xml
