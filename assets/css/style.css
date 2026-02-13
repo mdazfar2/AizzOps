@@ -1,18 +1,7 @@
-/*
- * Theme Name: Pixel Perfect Portfolio
- * Author: Pixel Perfect
- * Author URI/Mail: pixelperfectmk@gmail.com
- * Version: 1.0
- */
-
-/* Popup container */
-
 .popup{
   display: none;
 }
 
-/* CUSTOM RESETS
-================================================== */
 a, button {
   -webkit-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
