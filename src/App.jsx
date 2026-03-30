@@ -1,0 +1,57 @@
+import { Routes, Route } from 'react-router-dom';
+import Hero from './components/Hero';
+import About from './components/About';
+import Experience from './components/Experience';
+import Skills from './components/Skills';
+import Interests from './components/Interests';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Work from './components/Work';
+import ProjectDetail from './components/ProjectDetail';
+
+function Home() {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Navbar is included here for the Landing Page layout */}
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Interests />
+      <Contact />
+      <Footer />
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route 
+          path="/work" 
+          element={
+            <>
+              <Navbar />
+              <Work />
+            </>
+          } 
+        />
+        <Route 
+          path="/work/:projectSlug" 
+          element={
+            <>
+              <Navbar />
+              <ProjectDetail />
+            </>
+          } 
+        />
+      </Routes>
+    </>
+  );
+}
+
+export default App;
