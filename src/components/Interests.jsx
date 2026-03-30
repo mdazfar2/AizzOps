@@ -9,16 +9,16 @@ export default function Interests() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Beyond The Code
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-4"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] mx-auto rounded-full mb-4"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             I'm not someone who only stays with a laptop—I have a life beyond technology
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border border-blue-200 hover:shadow-xl transition-all duration-300">
+          <div className="bg-gradient-to-br from-[#fff5e8] to-[#e6f7ff] p-8 rounded-2xl border border-[#ffd18a] hover:shadow-xl transition-all duration-300">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center">
+              <div className="w-14 h-14 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-xl flex items-center justify-center shadow-md">
                 <Trophy className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Sports Enthusiast</h3>
@@ -28,24 +28,24 @@ export default function Interests() {
               Sports teach me teamwork, discipline, and the importance of never giving up.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+              <span className="px-3 py-1 bg-[#fff0e3] text-[#c75b00] rounded-full text-sm font-medium">
                 Basketball
               </span>
-              <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+              <span className="px-3 py-1 bg-[#fff0e3] text-[#c75b00] rounded-full text-sm font-medium">
                 Volleyball
               </span>
-              <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+              <span className="px-3 py-1 bg-[#fff0e3] text-[#c75b00] rounded-full text-sm font-medium">
                 Football
               </span>
-              <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+              <span className="px-3 py-1 bg-[#fff0e3] text-[#c75b00] rounded-full text-sm font-medium">
                 Badminton
               </span>
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl border border-purple-200 hover:shadow-xl transition-all duration-300">
+          <div className="bg-gradient-to-br from-[#ffe8f4] to-[#e6f7ff] p-8 rounded-2xl border border-[#ffb8e2] hover:shadow-xl transition-all duration-300">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center">
+              <div className="w-14 h-14 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-xl flex items-center justify-center shadow-md">
                 <Dumbbell className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Fitness & Gym</h3>
@@ -55,13 +55,13 @@ export default function Interests() {
               Fitness is not just about the body—it's about building discipline and consistency.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
+              <span className="px-3 py-1 bg-[#ffe3f3] text-[#c21873] rounded-full text-sm font-medium">
                 Strength Training
               </span>
-              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
+              <span className="px-3 py-1 bg-[#ffe3f3] text-[#c21873] rounded-full text-sm font-medium">
                 Cardio
               </span>
-              <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
+              <span className="px-3 py-1 bg-[#ffe3f3] text-[#c21873] rounded-full text-sm font-medium">
                 Discipline
               </span>
             </div>
@@ -75,7 +75,7 @@ export default function Interests() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-              <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-lg flex items-center justify-center flex-shrink-0">
                 <Clock className="w-5 h-5 text-white" />
               </div>
               <div>
@@ -87,7 +87,7 @@ export default function Interests() {
             </div>
 
             <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-lg flex items-center justify-center flex-shrink-0">
                 <Target className="w-5 h-5 text-white" />
               </div>
               <div>
@@ -99,7 +99,7 @@ export default function Interests() {
             </div>
 
             <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-              <div className="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-lg flex items-center justify-center flex-shrink-0">
                 <Heart className="w-5 h-5 text-white" />
               </div>
               <div>
@@ -111,7 +111,7 @@ export default function Interests() {
             </div>
 
             <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-              <div className="w-10 h-10 bg-pink-600 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-lg flex items-center justify-center flex-shrink-0">
                 <Users className="w-5 h-5 text-white" />
               </div>
               <div>
@@ -123,7 +123,7 @@ export default function Interests() {
             </div>
 
             <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-              <div className="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-lg flex items-center justify-center flex-shrink-0">
                 <Target className="w-5 h-5 text-white" />
               </div>
               <div>
@@ -135,7 +135,7 @@ export default function Interests() {
             </div>
 
             <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-              <div className="w-10 h-10 bg-cyan-600 rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-lg flex items-center justify-center flex-shrink-0">
                 <Trophy className="w-5 h-5 text-white" />
               </div>
               <div>

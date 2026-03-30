@@ -10,15 +10,15 @@ export default function About() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             About Me
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] mx-auto rounded-full"></div>
         </div>
 
         {/* Profile and Description Grid */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <div className="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 rounded-2xl p-8 h-full flex items-center justify-center">
+            <div className="bg-gradient-to-br from-[#fff3e0] via-[#ffe8f3] to-[#e6f7ff] rounded-2xl p-8 h-full flex items-center justify-center">
               <div className="text-center">
-                <div className="w-48 h-48 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <div className="w-48 h-48 bg-gradient-to-br from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
                   <span className="text-7xl font-bold text-white">MA</span>
                 </div>
                 <p className="text-gray-700 font-medium">Computer Science Graduate</p>
@@ -49,8 +49,8 @@ export default function About() {
 
         {/* Expertise Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border border-blue-200 hover:shadow-lg transition-shadow duration-300">
-            <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+          <div className="bg-gradient-to-br from-[#fff5e8] to-[#ffe8f4] p-6 rounded-xl border border-[#ffd18a] hover:shadow-lg transition-shadow duration-300">
+            <div className="w-12 h-12 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-lg flex items-center justify-center mb-4 shadow-md">
               <Code2 className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -61,8 +61,8 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border border-purple-200 hover:shadow-lg transition-shadow duration-300">
-            <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+          <div className="bg-gradient-to-br from-[#fff5e8] to-[#e6f7ff] p-6 rounded-xl border border-[#ffb8e2] hover:shadow-lg transition-shadow duration-300">
+            <div className="w-12 h-12 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-lg flex items-center justify-center mb-4 shadow-md">
               <GitPullRequest className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -73,8 +73,8 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border border-pink-200 hover:shadow-lg transition-shadow duration-300">
-            <div className="w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center mb-4">
+          <div className="bg-gradient-to-br from-[#ffe8f4] to-[#e6f7ff] p-6 rounded-xl border border-[#ffb8e2] hover:shadow-lg transition-shadow duration-300">
+            <div className="w-12 h-12 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-lg flex items-center justify-center mb-4 shadow-md">
               <Users className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -85,8 +85,8 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border border-green-200 hover:shadow-lg transition-shadow duration-300">
-            <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+          <div className="bg-gradient-to-br from-[#e6f7ff] to-[#fff5e8] p-6 rounded-xl border border-[#9ddfff] hover:shadow-lg transition-shadow duration-300">
+            <div className="w-12 h-12 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-lg flex items-center justify-center mb-4 shadow-md">
               <Target className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">

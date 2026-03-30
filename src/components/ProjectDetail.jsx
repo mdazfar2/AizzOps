@@ -15,7 +15,7 @@ export default function ProjectDetail() {
           <p className="text-gray-600 mb-8">The project you're looking for doesn't exist.</p>
           <Link
             to="/work"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] text-[#0c0a12] px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all"
           >
             <ChevronLeft className="w-5 h-5" />
             Back to Work
@@ -34,7 +34,7 @@ export default function ProjectDetail() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
           to="/work"
-          className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold mb-8 transition-colors"
+          className="inline-flex items-center gap-2 text-[#ff3b8f] hover:text-[#ff7b00] font-semibold mb-8 transition-colors"
         >
           <ChevronLeft className="w-5 h-5" />
           Back to Work
@@ -52,7 +52,7 @@ export default function ProjectDetail() {
 
           <div className="flex items-center gap-4 mb-6">
             <h1 className="text-5xl font-bold text-gray-900">{project.name}</h1>
-            <span className="px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 font-semibold rounded-full">
+            <span className="px-4 py-2 bg-gradient-to-r from-[#fff5e8] to-[#e6f7ff] text-[#c75b00] font-semibold rounded-full">
               {project.category === 'fullstack' ? 'Full Stack' : 'DevOps'}
             </span>
           </div>
@@ -68,7 +68,7 @@ export default function ProjectDetail() {
                 {project.technologies.map((tech, idx) => (
                   <span
                     key={idx}
-                    className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-semibold text-sm"
+                    className="px-4 py-2 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] text-[#0c0a12] rounded-full font-semibold text-sm"
                   >
                     {tech}
                   </span>
@@ -80,12 +80,12 @@ export default function ProjectDetail() {
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Key Metrics</h2>
                 <div className="space-y-3">
-                  {project.metrics.map((metric, idx) => (
-                    <div key={idx} className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
-                      <span className="text-gray-700 font-semibold">{metric}</span>
-                    </div>
-                  ))}
+                    {project.metrics.map((metric, idx) => (
+                      <div key={idx} className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] rounded-full"></div>
+                        <span className="text-gray-700 font-semibold">{metric}</span>
+                      </div>
+                    ))}
                 </div>
               </div>
             )}
@@ -97,7 +97,7 @@ export default function ProjectDetail() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all transform hover:scale-105"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] text-[#0c0a12] px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all transform hover:scale-105"
               >
                 <ExternalLink className="w-5 h-5" />
                 View Live
@@ -108,7 +108,7 @@ export default function ProjectDetail() {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition-all transform hover:scale-105"
+                className="inline-flex items-center gap-2 bg-[#0c0a12] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#1a1224] transition-all transform hover:scale-105"
               >
                 <Github className="w-5 h-5" />
                 GitHub
@@ -135,13 +135,13 @@ export default function ProjectDetail() {
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#ff3b8f] transition-colors">
                       {relatedProject.name}
                     </h3>
                     <p className="text-gray-600 text-sm mt-2 line-clamp-2">
                       {relatedProject.description}
                     </p>
-                    <div className="mt-4 flex items-center text-blue-600 font-semibold group-hover:gap-2 transition-all">
+                    <div className="mt-4 flex items-center text-[#ff3b8f] font-semibold group-hover:gap-2 transition-all">
                       View Project
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </div>

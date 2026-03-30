@@ -13,7 +13,7 @@ export default function Work() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            My <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Work</span>
+            My <span className="bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] bg-clip-text text-transparent">Work</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Explore my portfolio of full-stack applications and DevOps solutions built with cutting-edge technologies.
@@ -25,7 +25,7 @@ export default function Work() {
             onClick={() => setActiveCategory('fullstack')}
             className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
               activeCategory === 'fullstack'
-                ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
+                ? 'bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] text-[#0c0a12] shadow-lg'
                 : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
             }`}
           >
@@ -35,7 +35,7 @@ export default function Work() {
             onClick={() => setActiveCategory('devops')}
             className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
               activeCategory === 'devops'
-                ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
+                ? 'bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] text-[#0c0a12] shadow-lg'
                 : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
             }`}
           >
@@ -61,12 +61,12 @@ export default function Work() {
 
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="px-3 py-1 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 text-sm font-semibold rounded-full">
+                  <span className="px-3 py-1 bg-gradient-to-r from-[#fff5e8] to-[#e6f7ff] text-[#c75b00] text-sm font-semibold rounded-full">
                     {activeCategory === 'fullstack' ? 'Full Stack' : 'DevOps'}
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#ff3b8f] transition-colors">
                   {project.name}
                 </h3>
 
@@ -88,11 +88,11 @@ export default function Work() {
                 </div>
 
                 <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-                  <span className="text-sm font-semibold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text group-hover:opacity-100">
+                  <span className="text-sm font-semibold text-transparent bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] bg-clip-text group-hover:opacity-100">
                     View Details →
                   </span>
                   {project.github && (
-                    <Github className="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors" />
+                    <Github className="w-4 h-4 text-gray-400 group-hover:text-[#ff3b8f] transition-colors" />
                   )}
                 </div>
               </div>

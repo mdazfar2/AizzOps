@@ -84,12 +84,12 @@ export default function Experience() {
   ];
 
   const colorMap = {
-    blue: { bg: 'from-blue-50 to-blue-100', border: 'border-blue-200', dot: 'bg-blue-600', badge: 'bg-blue-100 text-blue-700' },
-    purple: { bg: 'from-purple-50 to-purple-100', border: 'border-purple-200', dot: 'bg-purple-600', badge: 'bg-purple-100 text-purple-700' },
-    green: { bg: 'from-green-50 to-green-100', border: 'border-green-200', dot: 'bg-green-600', badge: 'bg-green-100 text-green-700' },
-    pink: { bg: 'from-pink-50 to-pink-100', border: 'border-pink-200', dot: 'bg-pink-600', badge: 'bg-pink-100 text-pink-700' },
-    orange: { bg: 'from-orange-50 to-orange-100', border: 'border-orange-200', dot: 'bg-orange-600', badge: 'bg-orange-100 text-orange-700' },
-    cyan: { bg: 'from-cyan-50 to-cyan-100', border: 'border-cyan-200', dot: 'bg-cyan-600', badge: 'bg-cyan-100 text-cyan-700' }
+    blue: { bg: 'from-[#fff5e8] to-[#ffe8f4]', border: 'border-[#ffd18a]', dot: 'bg-[#ff7b00]', badge: 'bg-[#fff0e3] text-[#c75b00]' },
+    purple: { bg: 'from-[#ffe8f4] to-[#e6f7ff]', border: 'border-[#ffb8e2]', dot: 'bg-[#ff3b8f]', badge: 'bg-[#ffe3f3] text-[#c21873]' },
+    green: { bg: 'from-[#e6f7ff] to-[#f0fbff]', border: 'border-[#9ddfff]', dot: 'bg-[#19c3ff]', badge: 'bg-[#e0f7ff] text-[#0b88b5]' },
+    pink: { bg: 'from-[#ffe8f4] to-[#fff5e8]', border: 'border-[#ffb8e2]', dot: 'bg-[#ff3b8f]', badge: 'bg-[#ffe3f3] text-[#c21873]' },
+    orange: { bg: 'from-[#fff5e8] to-[#ffe8d6]', border: 'border-[#ffd18a]', dot: 'bg-[#ff7b00]', badge: 'bg-[#fff0e3] text-[#c75b00]' },
+    cyan: { bg: 'from-[#e6f7ff] to-[#f0fbff]', border: 'border-[#9ddfff]', dot: 'bg-[#19c3ff]', badge: 'bg-[#e0f7ff] text-[#0b88b5]' }
   };
 
   return (
@@ -99,14 +99,14 @@ export default function Experience() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Professional Experience
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-4"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] mx-auto rounded-full mb-4"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             A journey of continuous learning, building, and contributing to meaningful projects
           </p>
         </div>
 
         <div className="relative">
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-blue-600 via-purple-600 to-pink-600"></div>
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff]"></div>
 
           <div className="space-y-12">
             {experiences.map((exp, index) => {
