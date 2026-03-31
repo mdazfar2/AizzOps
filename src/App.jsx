@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Hero from './components/Hero';
+import Story from './components/Story';
+import Story1 from './components/Story1';
 import About from './components/About';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
@@ -16,6 +18,8 @@ function Home() {
       {/* Navbar is included here for the Landing Page layout */}
       <Navbar />
       <Hero />
+      <Story />
+      <Story1 />
       <About />
       <Skills />
       <Experience />
