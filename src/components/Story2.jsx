@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Story1() {
+export default function Story2() {
   return (
     <section
       id="story-2"
