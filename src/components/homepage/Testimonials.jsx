@@ -2,28 +2,25 @@ import React, { useState } from "react";
 
 const testimonials = [
   {
-    company: "azfar",
-    logo: "kajds",
+    image: "assets/img/siddheya.webp", 
     quote:
-      "hello hello hellohello hello helloh hellohello hello hellohello hello helloh hellohello hello hellohello hello helloh hello",
-    name: "Mr Azfar",
-    role: "yoyo",
+      "I had the pleasure of working with Azfar on HelpOps at GSSoC. He showed strong leadership, provided clear guidance, maintained high code standards, and created a collaborative, supportive environment for contributors.",
+    name: "Siddheya Kulkarni",
+    role: "Software Eng. at Capgemini",
   },
   {
-    company: "alam",
-    logo: "kasjd",
+    image: "assets/img/mayank-image.webp",
     quote:
-      "hello hello hellohello hello helloh hellohello hello hellohello hello helloh hello",
-    name: "sara",
-    role: "kasjf",
+      "During our internship at LinuxWorld Informatics, I collaborated closely with Azfar. He demonstrated strong dedication, responsibility, and a relentless work ethic, along with impressive expertise in Ansible.",
+    name: "Mayank Sharma",
+    role: "DevOps Eng.",
   },
   {
-    company: "haina",
-    logo: "lkskd",
+    image: "assets/img/vansh.webp",
     quote:
-      "hello hello hellohello hello helloh hellohello hello hellohello hello helloh hellohello hello hellohello hello helloh hellohello hello hellohello hello helloh hello",
-    name: "zara",
-    role: "kasjdf",
+      "I had the privilege of working with Azfar, who stood out for his strong commitment, proactive mindset, and clear guidance. His enthusiasm and expertise made complex tasks easier and greatly contributed to overall project success.",
+    name: "Vansh Chaurasiya",
+    role: "SDE at GoComet",
   },
 ];
 
@@ -40,12 +37,26 @@ function ArrowButton({ direction = "left", onClick }) {
   return (
     <button
       type="button"
-      className="flex h-10 w-10 items-center justify-center rounded-full border border-[#e5e7eb] bg-white text-[#374151] transition hover:border-[#7c3aed] hover:text-[#7c3aed] shadow-sm"
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-[#e5e7eb] bg-white text-[#6b7280] shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition hover:border-[#d1d5db] hover:text-[#111827] active:scale-95"
       aria-label={isLeft ? "Previous testimonial" : "Next testimonial"}
       onClick={onClick}
-      onDoubleClick={onClick}
     >
-      <span className="text-lg">{isLeft ? "<" : ">"}</span>
+      <svg
+        aria-hidden
+        viewBox="0 0 24 24"
+        className="h-5 w-5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        {isLeft ? (
+          <path d="M15 6 9 12l6 6" />
+        ) : (
+          <path d="m9 6 6 6-6 6" />
+        )}
+      </svg>
     </button>
   );
 }
@@ -64,90 +75,86 @@ export default function Testimonials() {
   const item = testimonials[active];
 
   return (
-    <section className="bg-[#f8f9fc] text-[#111827] px-6 py-24">
-      <div className="max-w-6xl mx-auto space-y-14">
+    <section className="bg-[#f8f9fc] text-[#0f172a] px-6 md:px-10 lg:px-16 py-20 md:py-24 font-sans">
+      <div className="max-w-6xl mx-auto space-y-12">
 
-        {/* TOP BORDER */}
-        <div className="h-px w-full bg-[#e5e7eb]"></div>
+        <div className="h-px w-full bg-[#e5e7eb]" />
 
         {/* HEADER */}
-        <div className="space-y-4 text-center">
-          <div className="flex items-center justify-center gap-3 text-sm uppercase tracking-[0.18em] text-[#7c3aed]">
-            <span className="h-2 w-2 rounded-full bg-[#7c3aed]"></span>
+        <div className="space-y-5 text-center">
+          <div className="flex items-center justify-center gap-3 text-[11px] md:text-xs uppercase tracking-[0.28em] text-[#7c3aed] font-semibold">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#7c3aed]"></span>
             <span>{"{04} — Testimonials"}</span>
           </div>
 
           <div className="space-y-3">
-            <h2 className="flex items-center justify-center gap-3 text-[42px] md:text-[56px] font-semibold leading-tight text-[#0f172a]">
+            <h2 className="flex flex-wrap items-center justify-center gap-2 text-[34px] md:text-[56px] leading-[1.06] font-semibold tracking-tight text-[#0b1224]">
               <span>Don't take my word for it</span>
-              <StarIcon className="h-8 w-8 text-[#7c3aed]" />
+              <StarIcon className="h-7 w-7 md:h-8 md:w-8 text-[#7c3aed]" />
             </h2>
-
-            <div className="flex items-center justify-center gap-2 text-[#7c3aed]">
+            <div className="flex items-center justify-center gap-2 text-[#7c3aed] text-[11px] md:text-xs font-semibold uppercase tracking-[0.32em]">
               <StarIcon className="h-4 w-4" />
-              <span className="text-sm font-medium uppercase tracking-wide">
-                Take theirs
-              </span>
+              <span>Take theirs</span>
             </div>
           </div>
         </div>
 
-        {/* CARD */}
-        <div className="relative mx-auto max-w-5xl overflow-hidden rounded-3xl border border-[#e5e7eb] bg-white p-8 md:p-10 shadow-[0_20px_60px_-20px_rgba(0,0,0,0.1)]">
-          {/* subtle grid */}
+        {/* COMPACT CARD */}
+        <div className="relative mx-auto max-w-3xl overflow-hidden rounded-[2rem] border border-[#e5e7eb] bg-white p-6 md:p-10 shadow-[0_15px_40px_-15px_rgba(0,0,0,0.08)]">
+          
+          {/* Subtle Grid Pattern */}
           <div
-            className="pointer-events-none absolute inset-0 opacity-30"
+            className="pointer-events-none absolute inset-0 opacity-[0.03]"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px)",
-              backgroundSize: "60px 60px",
+                "linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)",
+              backgroundSize: "40px 40px",
             }}
           />
 
-          {/* soft glow */}
-          <div className="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-[#7c3aed]/10 blur-3xl" />
-          <div className="pointer-events-none absolute -right-12 -bottom-16 h-52 w-52 rounded-full bg-[#a78bfa]/20 blur-3xl" />
+          <div className="relative flex flex-col gap-6">
 
-          <div className="relative flex flex-col gap-8 md:gap-10">
-
-            {/* TOP */}
+            {/* TOP BAR: Quote Icon & Navigation */}
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3 text-2xl font-semibold tracking-[0.08em]">
-                <span className="h-3 w-3 rounded-full bg-[#111827]"></span>
-                <span className="text-[#374151]">{item.logo}</span>
+              <div className="text-[#7c3aed] opacity-10">
+                <svg width="35" height="28" viewBox="0 0 45 36" fill="currentColor">
+                  <path d="M13.125 0C5.875 6.75 0 15.75 0 24.75C0 31.5 4.5 36 10.125 36C15.75 36 19.125 32.625 19.125 28.125C19.125 23.625 15.75 21.375 12.375 21.375C11.25 21.375 10.125 21.375 9 21.375C10.125 15.75 14.625 10.125 18 6.75L13.125 0ZM39.375 0C32.125 6.75 26.25 15.75 26.25 24.75C26.25 31.5 30.75 36 36.375 36C42 36 45.375 32.625 45.375 28.125C45.375 23.625 42 21.375 38.625 21.375C37.5 21.375 36.375 21.375 35.25 21.375C36.375 15.75 40.875 10.125 44.25 6.75L39.375 0Z" />
+                </svg>
               </div>
 
-              <div className="hidden md:flex items-center gap-3">
+              <div className="flex items-center gap-2">
                 <ArrowButton direction="left" onClick={handlePrev} />
                 <ArrowButton direction="right" onClick={handleNext} />
               </div>
             </div>
 
-            {/* QUOTE */}
-            <p className="text-xl md:text-2xl leading-relaxed text-[#374151] max-w-4xl">
-              {item.quote}
-            </p>
+            {/* QUOTE TEXT */}
+            <div className="min-h-[100px]">
+                <p className="text-xl md:text-2xl font-medium leading-relaxed text-[#374151]">
+                "{item.quote}"
+                </p>
+            </div>
 
-            {/* USER */}
-            <div className="flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#f3f4f6] text-lg font-semibold text-[#111827]">
-                {item.name.charAt(0)}
+            {/* USER INFO SECTION */}
+            <div className="flex items-center gap-4 pt-4 border-t border-gray-50">
+              {/* User Image */}
+              <div className="h-12 w-12 flex-shrink-0 overflow-hidden rounded-full border border-gray-100 shadow-sm bg-[#f3f4f6]">
+                  <img 
+                      src={item.image} 
+                      alt={item.name} 
+                      className="h-full w-full object-cover"
+                      onError={(e) => { e.target.src = `https://ui-avatars.com/api/?name=${item.name}&background=7c3aed&color=fff`; }}
+                  />
               </div>
 
-              <div className="space-y-1">
-                <p className="text-base font-semibold text-[#111827]">
+              <div className="space-y-0.5">
+                <p className="text-base font-bold text-[#111827]">
                   {item.name}
                 </p>
-                <p className="text-sm text-[#6b7280]">
+                <p className="text-xs font-semibold text-[#4b5563] tracking-wide">
                   {item.role}
                 </p>
               </div>
-            </div>
-
-            {/* MOBILE BUTTONS */}
-            <div className="flex md:hidden items-center gap-3">
-              <ArrowButton direction="left" onClick={handlePrev} />
-              <ArrowButton direction="right" onClick={handleNext} />
             </div>
 
           </div>
