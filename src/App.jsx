@@ -2,9 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Hero from './components/Hero';
 import Story from './components/Story';
 import Story2 from './components/Story2';
-import About from './components/About';
-import Experience from './components/Experience';
-import Skills from './components/Skills';
+import Howitworks from './components/Howitworks';
 import Interests from './components/Interests';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -20,9 +18,7 @@ function Home() {
       <Hero />
       <Story />
       <Story2 />
-      <About />
-      <Skills />
-      <Experience />
+      <Howitworks />
       <Interests />
       <Contact />
       <Footer />
