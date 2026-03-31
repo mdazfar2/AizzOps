@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Story from './components/Story';
 import Story2 from './components/Story2';
 import Howitworks from './components/Howitworks';
+import Testimonials from './components/Testimonials';
 import Interests from './components/Interests';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -19,6 +20,7 @@ function Home() {
       <Story />
       <Story2 />
       <Howitworks />
+      <Testimonials />
       <Interests />
       <Contact />
       <Footer />
