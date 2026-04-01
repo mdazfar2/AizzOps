@@ -13,7 +13,7 @@ export default function Work() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            My <span className="bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] bg-clip-text text-transparent">Work</span>
+            My <span className="bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] bg-clip-text text-transparent">Projects</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Explore my portfolio of full-stack applications and DevOps solutions built with cutting-edge technologies.
@@ -47,7 +47,7 @@ export default function Work() {
           {filteredProjects.map((project) => (
             <Link
               key={project.id}
-              to={`/work/${project.slug}`}
+              to={`/projects/${project.slug}`}
               className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
               <div className="relative h-64 overflow-hidden bg-gray-200">

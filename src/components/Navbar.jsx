@@ -50,24 +50,18 @@ export default function Navbar() {
               >
                 About
               </Link>
-              <button
-                onClick={() => scrollToSection('skills')}
-                className="text-gray-800 hover:text-[#ff3b8f] transition-colors font-medium"
-              >
-                Skills
-              </button>
               <Link
-                to="/work"
+                to="/works"
                 className="text-gray-800 hover:text-[#ff3b8f] transition-colors font-medium"
               >
                 Work
               </Link>
-              <button
-                onClick={() => scrollToSection('experience')}
+              <Link
+                to="/projects"
                 className="text-gray-800 hover:text-[#ff3b8f] transition-colors font-medium"
               >
-                Experience
-              </button>
+                Projects
+              </Link>
               <button
                 onClick={() => scrollToSection('interests')}
                 className="text-gray-800 hover:text-[#ff3b8f] transition-colors font-medium"
@@ -105,25 +99,20 @@ export default function Navbar() {
             >
               About
             </Link>
-            <button
-              onClick={() => scrollToSection('skills')}
-              className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors"
-            >
-              Skills
-            </button>
             <Link
-              to="/work"
+              to="/works"
               className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Work
             </Link>
-            <button
-              onClick={() => scrollToSection('experience')}
+            <Link
+              to="/projects"
               className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors"
+              onClick={() => setIsOpen(false)}
             >
-              Experience
-            </button>
+              Projects
+            </Link>
             <button
               onClick={() => scrollToSection('interests')}
               className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors"

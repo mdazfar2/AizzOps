@@ -9,8 +9,9 @@ import Contact from './components/homepage/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Work from './components/Work';
+import Works from './components/Works';
 import ProjectDetail from './components/ProjectDetail';
-import About from './components/about/About';
+import About from './components/About';
 
 function Home() {
   return (
@@ -48,12 +49,39 @@ function App() {
           element={
             <>
               <Navbar />
-              <Work />
+              <Works />
+            </>
+          } 
+        />
+        <Route 
+          path="/works" 
+          element={
+            <>
+              <Navbar />
+              <Works />
             </>
           } 
         />
         <Route 
           path="/work/:projectSlug" 
+          element={
+            <>
+              <Navbar />
+              <ProjectDetail />
+            </>
+          } 
+        />
+        <Route 
+          path="/projects" 
+          element={
+            <>
+              <Navbar />
+              <Work />
+            </>
+          } 
+        />
+        <Route 
+          path="/projects/:projectSlug" 
           element={
             <>
               <Navbar />

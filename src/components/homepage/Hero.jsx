@@ -72,7 +72,7 @@ export default function Hero() {
           </a>
 
           <Link
-            to="/work"
+            to="/projects"
             className="flex items-center gap-2 text-[#ff3b8f] font-medium transition hover:text-[#ff7b00]"
           >
             Join Community
