@@ -8,7 +8,6 @@ import Interests from './components/homepage/Interests';
 import Contact from './components/homepage/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import Work from './components/Work';
 import Works from './components/Works';
 import ProjectDetail from './components/ProjectDetail';
 import About from './components/About';
@@ -44,15 +43,7 @@ function App() {
             </>
           } 
         />
-        <Route 
-          path="/work" 
-          element={
-            <>
-              <Navbar />
-              <Works />
-            </>
-          } 
-        />
+        
         <Route 
           path="/works" 
           element={
@@ -76,7 +67,7 @@ function App() {
           element={
             <>
               <Navbar />
-              <Work />
+              <Works />
             </>
           } 
         />

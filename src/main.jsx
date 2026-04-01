@@ -8,6 +8,19 @@ import './index.css';
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
+// Remove any stale service workers from older builds to avoid fetch/clone errors.
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then((registrations) => {
+    registrations.forEach((registration) => {
+      registration.unregister();
+    });
+  });
+
+  if (window.caches?.keys) {
+    caches.keys().then((keys) => keys.forEach((key) => caches.delete(key)));
+  }
+}
+
 root.render(
   <StrictMode>
     <BrowserRouter>
