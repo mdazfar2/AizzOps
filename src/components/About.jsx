@@ -205,7 +205,7 @@ export default function About() {
 						<div className="relative lg:translate-x-4 mt-10">
 							<div className="rotate-[3deg] rounded-2xl overflow-hidden shadow-xl border border-black/10 bg-white">
 								<img
-									src="/assets/img/Azfar Alam.jpg"
+									src="/assets/img/Azfar Alam.webp"
 									alt="Azfar"
 									className="w-[320px] h-[380px] object-cover"
 								/>
