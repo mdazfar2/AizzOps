@@ -44,12 +44,12 @@ export default function Navbar() {
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
-              <button
-                onClick={() => scrollToSection('about')}
+              <Link
+                to="/about"
                 className="text-gray-800 hover:text-[#ff3b8f] transition-colors font-medium"
               >
                 About
-              </button>
+              </Link>
               <button
                 onClick={() => scrollToSection('skills')}
                 className="text-gray-800 hover:text-[#ff3b8f] transition-colors font-medium"
@@ -98,12 +98,13 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white border-t border-gray-200">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <button
-              onClick={() => scrollToSection('about')}
+            <Link
+              to="/about"
               className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors"
+              onClick={() => setIsOpen(false)}
             >
               About
-            </button>
+            </Link>
             <button
               onClick={() => scrollToSection('skills')}
               className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors"

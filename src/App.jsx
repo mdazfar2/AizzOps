@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Work from './components/Work';
 import ProjectDetail from './components/ProjectDetail';
+import About from './components/about/About';
 
 function Home() {
   return (
@@ -33,6 +34,16 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route 
+          path="/about" 
+          element={
+            <>
+              <Navbar />
+              <About />
+              <Footer />
+            </>
+          } 
+        />
         <Route 
           path="/work" 
           element={
