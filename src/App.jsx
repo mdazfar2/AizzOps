@@ -11,6 +11,7 @@ import Navbar from './components/Navbar';
 import Works from './components/Works';
 import ProjectDetail from './components/ProjectDetail';
 import About from './components/About';
+import Work from './components/project';
 
 function Home() {
   return (
@@ -68,7 +69,8 @@ function App() {
           element={
             <>
               <Navbar />
-              <Works />
+              <Work />
+              <Footer />
             </>
           } 
         />
