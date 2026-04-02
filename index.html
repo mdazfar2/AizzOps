@@ -35,6 +35,7 @@
             box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
             border: 1px solid rgba(255, 255, 255, 0.6);
             animation: fadeIn 1.5s ease-out;
+            max-width: 90%;
         }
 
         @keyframes fadeIn {
@@ -44,10 +45,17 @@
 
         h1 {
             font-size: 3rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             background: linear-gradient(90deg, #ff6b6b, #ff9f1c, #ffd166, #06b6d4, #2563eb);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        .launch-text {
+            color: #4b5563;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
         }
 
         .loader-bar {
@@ -74,6 +82,36 @@
             100% { left: 100%; }
         }
 
+        /* Countdown Styles */
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .time-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 70px;
+        }
+
+        .time-value {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #1f2937;
+            line-height: 1;
+        }
+
+        .time-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #94a3b8;
+            margin-top: 5px;
+        }
+
         .thanks {
             font-weight: 600;
             color: #64748b;
@@ -89,6 +127,13 @@
             z-index: -1;
             filter: blur(2px);
         }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            .countdown-container { gap: 0.8rem; }
+            .time-value { font-size: 1.5rem; }
+            .time-box { min-width: 50px; }
+        }
     </style>
 </head>
 
@@ -99,13 +144,61 @@
 
     <div class="container">
         <h1>Website 2.0 is Building</h1>
+        <p class="launch-text">A new experience will be live on <b>20 April 2026</b></p>
 
         <div class="loader-bar">
             <div class="loader-fill"></div>
         </div>
 
+        <div class="countdown-container">
+            <div class="time-box">
+                <span id="days" class="time-value">00</span>
+                <span class="time-label">Days</span>
+            </div>
+            <div class="time-box">
+                <span id="hours" class="time-value">00</span>
+                <span class="time-label">Hours</span>
+            </div>
+            <div class="time-box">
+                <span id="minutes" class="time-value">00</span>
+                <span class="time-label">Minutes</span>
+            </div>
+            <div class="time-box">
+                <span id="seconds" class="time-value">00</span>
+                <span class="time-label">Seconds</span>
+            </div>
+        </div>
+
         <p class="thanks">Thank you for your visit!</p>
     </div>
+
+    <script>
+        // Target Date: April 20, 2026 00:00:00 (Indian Standard Time)
+        const targetDate = new Date("April 20, 2026 00:00:00").getTime();
+
+        const updateCountdown = () => {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference > 0) {
+                const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById("days").innerText = d < 10 ? "0" + d : d;
+                document.getElementById("hours").innerText = h < 10 ? "0" + h : h;
+                document.getElementById("minutes").innerText = m < 10 ? "0" + m : m;
+                document.getElementById("seconds").innerText = s < 10 ? "0" + s : s;
+            } else {
+                document.querySelector(".countdown-container").innerHTML = "<h3>We are Live!</h3>";
+            }
+        };
+
+        // Update every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+    </script>
 
 </body>
 </html>
