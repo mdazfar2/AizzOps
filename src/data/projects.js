@@ -83,6 +83,80 @@ technologies: ['Docker', 'AWS EC2', 'React', 'Node.js', 'MongoDB']
     subCategory: 'CI/CD Pipeline',
     description: 'Automated Jenkins deployment on EKS using operator with pipeline as code, dynamic provisioning, and monitoring stack.',
     technologies: ['Kubernetes', 'Jenkins', 'AWS EKS', 'Prometheus', 'Grafana', 'Loki']
-}
+},
+{
+    id: 17,
+    name: 'EzyShop E-Commerce Platform',
+    category: 'fullstack',
+    description: 'E commerce platform connecting local stores with users offering product browsing price comparison and secure online payments.',
+    technologies: ['Next.js', 'MongoDB', 'Prisma', 'TypeScript', 'Razorpay', 'TailwindCSS']
+},
+
+{
+    id: 12,
+    name: 'Eywa Private Communication Platform',
+    category: 'fullstack',
+    description: 'Secure private communication platform with real time chat, encrypted messaging, media sharing, and voice video calls.',
+    technologies: ['React', 'Flask', 'MongoDB', 'Socket.IO', 'WebRTC', 'AES']
+},
+{
+    id: 13,
+    name: 'Azfar Broadcast Video Platform',
+    category: 'fullstack',
+    description: 'Instant video calling platform enabling users to join live group calls via link with real time interaction.',
+    technologies: ['React', 'Flask', 'WebRTC', 'Socket.IO']
+},
+{
+    id: 14,
+    name: 'Studium Study Tracker',
+    category: 'fullstack',
+    description: 'Study tracking web app helping students monitor daily progress and stay consistent with learning goals.',
+    technologies: ['React', 'Flask']
+},
+{
+    id: 15,
+    name: 'DFA Visual Simulator',
+    category: 'fullstack',
+    description: 'Interactive platform to build simulate and visualize DFA with animations and regex to DFA conversion.',
+    technologies: ['React', 'Node.js', 'Express', 'Three.js', 'TailwindCSS']
+},
+{
+    id: 16,
+    name: 'GfBanao Learning & Connection Platform',
+    category: 'fullstack',
+    description: 'Platform combining e learning and connections enabling users to grow skills collaborate and build meaningful relationships.',
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'TypeScript', 'TailwindCSS']
+},
+{
+    id: 18,
+    name: 'RapidGig Labs Agency Website',
+    category: 'fullstack',
+    description: 'Modern freelance agency website showcasing services and enabling clients to connect and learn about the platform.',
+    technologies: ['React', 'TailwindCSS', 'TypeScript']
+},
+{
+    id: 19,
+    name: 'Certify Certificate Verification System',
+    category: 'fullstack',
+    description: 'Certificate verification platform enabling users to validate certificates via unique IDs with admin panel management features.',
+    technologies: ['React', 'TypeScript', 'MongoDB']
+},
+{
+    id: 20,
+    name: 'DBGMI Tournament Platform',
+    category: 'fullstack',
+    description: 'Gaming tournament platform frontend enabling users to explore matches register and view schedules with admin interface design.',
+    technologies: ['React', 'TailwindCSS']
+},
+{
+    id: 21,
+    name: 'JEC Forge Community Platform',
+    category: 'fullstack',
+    description: 'Student community platform frontend showcasing projects events study materials and enabling participation with modern responsive design.',
+    technologies: ['React', 'TailwindCSS']
+},
+
+
+
 
 ];
