@@ -13,6 +13,8 @@ import ProjectDetail from './components/project/ProjectDetail';
 import About from './components/About';
 import Work from './components/project/project';
 import HelpOpsHubDetail from './components/project/project_details/HelpOpsHubDetail';
+import MernEksCicdDetail from './components/project/project_details/MernEksCicdDetail';
+import SpaceWebDetail from './components/project/project_details/SpaceWebDetail';
 
 function Home() {
   return (
@@ -81,6 +83,26 @@ function App() {
             <>
               <Navbar />
               <HelpOpsHubDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/mern-eks-cicd-pipeline" 
+          element={
+            <>
+              <Navbar />
+              <MernEksCicdDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/spaceweb-ci-cd-automation" 
+          element={
+            <>
+              <Navbar />
+              <SpaceWebDetail />
               <Footer />
             </>
           } 

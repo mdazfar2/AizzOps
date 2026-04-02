@@ -3,6 +3,7 @@ export const projects = [
     id: '1', 
     name: 'HelpOps-Hub',
     category: 'fullstack',
+    detailPath: '/project/helpops-hub',
     visit: `https://github.com/mdazfar2`,
     viewCode: `https://github.com/mdazfar2`,
     description: 'A collaborative DevOps platform for solving real-world errors and automating workflows with community-driven solutions.',
@@ -11,7 +12,9 @@ export const projects = [
   {
     id: '2',
     name: 'MERN EKS CI/CD Pipeline',
+    detailPath: '/project/mern-eks-cicd-pipeline',
     category: 'devops',
+    visit: `https://github.com/mdazfar2/Github-Actions-EKS-CICD-Cafe-Coffee`,
     subCategory: 'CI/CD Pipeline',
     description: 'Automated CI/CD pipeline deploying MERN apps to AWS EKS using Docker, Terraform, and GitHub Actions.',
     technologies: ['Docker', 'Terraform', 'AWS EKS', 'GitHub Actions', 'SonarQube']
@@ -21,7 +24,9 @@ export const projects = [
     id: '3',
     name: 'SpaceWeb CI/CD Automation',
     category: 'devops',
+    detailPath: '/project/spaceweb-ci-cd-automation',
     subCategory: 'CI/CD Pipeline',
+    visit:`https://github.com/mdazfar2/Automated-CI-CD-Pipeline-Space-Web`,
     description: 'Automated CI/CD pipeline deploying static websites using Docker Compose, Jenkins, and GitHub Webhooks.',
     technologies: ['Docker', 'Docker Compose', 'Jenkins', 'GitHub', 'GitHub Webhooks', 'CI/CD']
 
@@ -39,27 +44,27 @@ export const projects = [
   {
     id: '5',
     name: 'Netflix DevSecOps CI/CD Pipeline',
-category: 'devops',
-subCategory: 'Monitoring & Logging',
-description: 'End-to-end DevSecOps pipeline deploying Netflix clone with Jenkins, Docker, Kubernetes, monitoring, and security scanning.',
-technologies: ['Jenkins', 'Docker', 'Kubernetes', 'Prometheus', 'Grafana', 'Trivy']
+    category: 'devops',
+    subCategory: 'Monitoring & Logging',
+    description: 'End-to-end DevSecOps pipeline deploying Netflix clone with Jenkins, Docker, Kubernetes, monitoring, and security scanning.',
+    technologies: ['Jenkins', 'Docker', 'Kubernetes', 'Prometheus', 'Grafana', 'Trivy']
 
   },
   {
     id:6,
     name: 'Two Tier Flask App Deployment',
-category: 'devops',
-subCategory: 'Monitoring & Logging',
-description: 'Scalable Flask and MySQL application deployed using Docker, Kubernetes, EKS, and automated CI/CD pipelines.',
-technologies: ['Docker', 'Kubernetes', 'AWS EKS', 'Helm', 'Flask', 'MySQL']
+    category: 'devops',
+    subCategory: 'Monitoring & Logging',
+    description: 'Scalable Flask and MySQL application deployed using Docker, Kubernetes, EKS, and automated CI/CD pipelines.',
+    technologies: ['Docker', 'Kubernetes', 'AWS EKS', 'Helm', 'Flask', 'MySQL']
   },
   {
     id:7,
     name: 'Three Tier Wanderlust App Deployment',
-category: 'devops',
-subCategory: 'Monitoring & Logging',
-description: 'Three tier travel app deployed using Docker, AWS, and MERN stack with scalable architecture.',
-technologies: ['Docker', 'AWS EC2', 'React', 'Node.js', 'MongoDB']
+    category: 'devops',
+    subCategory: 'Monitoring & Logging',
+    description: 'Three tier travel app deployed using Docker, AWS, and MERN stack with scalable architecture.',
+    technologies: ['Docker', 'AWS EC2', 'React', 'Node.js', 'MongoDB']
   },
 
   {

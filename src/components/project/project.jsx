@@ -97,7 +97,7 @@ export default function Work() {
           {filteredProjects.map((project) => (
             <Link
               key={project.id}
-              to={project.name === 'HelpOps-Hub' ? '/project/helpops-hub' : `/work/${project.slug}`}
+              to={project.detailPath || (project.name === 'HelpOps-Hub' ? '/project/helpops-hub' : `/work/${project.slug}`)}
               className="group flex flex-col bg-white border border-slate-200 rounded-[2rem] p-8 transition-all duration-500 hover:border-blue-300 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-2 relative overflow-hidden"
             >
               {/* Card Header */}
