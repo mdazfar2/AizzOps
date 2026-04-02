@@ -169,6 +169,8 @@ export const projects = [
     id: 18,
     name: 'RapidGig Labs Agency Website',
     category: 'fullstack',
+    visit: `https://rapidgig.vercel.app/`,
+  detailPath: '/project/rapidgig-labs-agency-website',
     description: 'Modern freelance agency website showcasing services and enabling clients to connect and learn about the platform.',
     technologies: ['React', 'TailwindCSS', 'TypeScript']
 },
@@ -176,6 +178,8 @@ export const projects = [
     id: 19,
     name: 'Certify Certificate Verification System',
     category: 'fullstack',
+  detailPath: '/project/certify-certificate-verification-system',
+    visit: `https://certify-helpops.vercel.app/`,
     description: 'Certificate verification platform enabling users to validate certificates via unique IDs with admin panel management features.',
     technologies: ['React', 'TypeScript', 'MongoDB']
 },
@@ -193,6 +197,9 @@ export const projects = [
     id: 21,
     name: 'JEC Forge Community Platform',
     category: 'fullstack',
+  detailPath: '/project/jec-forge-community-platform',
+    viewCode: `https://github.com/mdazfar2/jec-forge`,
+    visit: `https://jecforge.vercel.app/`,
     description: 'Student community platform frontend showcasing projects events study materials and enabling participation with modern responsive design.',
     technologies: ['React', 'TailwindCSS']
 },
@@ -200,7 +207,10 @@ export const projects = [
     id: 23,
     name: 'Gesture Controlled Docker Launcher',
     category: 'devops',
+  detailPath: '/project/gesture-controlled-docker-launcher',
     subCategory: 'Automation',
+    viewCode:`https://github.com/mdazfar2/Docker_container_launch_by_finger`,
+    visit: `https://medium.com/@azfaralam/scaling-docker-containers-with-fingers-5f818e2b8abe`,
     description: 'Gesture based system using computer vision to launch and manage Docker containers automatically without manual commands.',
     technologies: ['Python', 'Docker', 'OpenCV']
 },
@@ -208,13 +218,10 @@ export const projects = [
     id: 25,
     name: 'DevBurn GitHub Activity Analyzer',
     category: 'fullstack',
+  detailPath: '/project/devburn-github-activity-analyzer',
     description: 'Analyzes GitHub activity to detect burnout risk and provide insights on work patterns and developer health balance.',
     technologies: ['React', 'TailwindCSS', 'Flask', 'GitHub API']
 },
-
-
-
-
 
 
 ];

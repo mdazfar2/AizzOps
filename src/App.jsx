@@ -29,6 +29,11 @@ import StudiumDetail from './components/project/project_details/StudiumDetail';
 import DfaVisualDetail from './components/project/project_details/DfaVisualDetail';
 import GfBanaoDetail from './components/project/project_details/GfBanaoDetail';
 import DbgmiTournamentDetail from './components/project/project_details/DbgmiTournamentDetail';
+import RapidGigDetail from './components/project/project_details/RapidGigDetail';
+import CertifyDetail from './components/project/project_details/CertifyDetail';
+import JecForgeDetail from './components/project/project_details/JecForgeDetail';
+import GestureDockerDetail from './components/project/project_details/GestureDockerDetail';
+import DevBurnDetail from './components/project/project_details/DevBurnDetail';
 
 function Home() {
   return (
@@ -257,6 +262,56 @@ function App() {
             <>
               <Navbar />
               <DbgmiTournamentDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/rapidgig-labs-agency-website" 
+          element={
+            <>
+              <Navbar />
+              <RapidGigDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/certify-certificate-verification-system" 
+          element={
+            <>
+              <Navbar />
+              <CertifyDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/jec-forge-community-platform" 
+          element={
+            <>
+              <Navbar />
+              <JecForgeDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/gesture-controlled-docker-launcher" 
+          element={
+            <>
+              <Navbar />
+              <GestureDockerDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/devburn-github-activity-analyzer" 
+          element={
+            <>
+              <Navbar />
+              <DevBurnDetail />
               <Footer />
             </>
           } 
