@@ -155,6 +155,15 @@ technologies: ['Docker', 'AWS EC2', 'React', 'Node.js', 'MongoDB']
     description: 'Student community platform frontend showcasing projects events study materials and enabling participation with modern responsive design.',
     technologies: ['React', 'TailwindCSS']
 },
+{
+    id: 23,
+    name: 'Gesture Controlled Docker Launcher',
+    category: 'devops',
+    subCategory: 'Automation',
+    description: 'Gesture based system using computer vision to launch and manage Docker containers automatically without manual commands.',
+    technologies: ['Python', 'Docker', 'OpenCV']
+},
+
 
 
 

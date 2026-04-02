@@ -74,7 +74,8 @@ export default function Work() {
           {/* DevOps Sub-Filtering (Only shows when DevOps is active) */}
           {activeCategory === 'devops' && (
             <div className="flex flex-wrap gap-2 animate-in fade-in slide-in-from-top-2 duration-300">
-              {['all', 'CI/CD Pipeline', 'Monitoring & Logging', 'Cloud Services'].map((sub) => (
+              {/* Yahan 'Automation' add kar diya hai */}
+              {['all', , 'Automation', 'CI/CD Pipeline', 'Monitoring & Logging', 'Cloud Services'].map((sub) => (
                 <button
                   key={sub}
                   onClick={() => setActiveSubCategory(sub)}
