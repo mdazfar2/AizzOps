@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ExternalLink, Github } from 'lucide-react';
-import { projects } from '../data/projects';
+import { projects } from '../../data/projects';
 
 export default function Work() {
   // Removed the TypeScript type definition <'fullstack' | 'devops'>

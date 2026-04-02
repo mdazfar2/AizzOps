@@ -9,9 +9,9 @@ import Contact from './components/homepage/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Works from './components/Works';
-import ProjectDetail from './components/ProjectDetail';
+import ProjectDetail from './components/project/ProjectDetail';
 import About from './components/About';
-import Work from './components/project';
+import Work from './components/project/project';
 
 function Home() {
   return (
