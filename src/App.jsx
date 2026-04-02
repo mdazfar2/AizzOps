@@ -65,7 +65,7 @@ function App() {
           } 
         />
         <Route 
-          path="/projects" 
+          path="/project" 
           element={
             <>
               <Navbar />
@@ -75,7 +75,7 @@ function App() {
           } 
         />
         <Route 
-          path="/projects/:projectSlug" 
+          path="/project/:projectSlug" 
           element={
             <>
               <Navbar />

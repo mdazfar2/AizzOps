@@ -14,7 +14,7 @@ export default function ProjectDetail() {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Project Not Found</h1>
           <p className="text-gray-600 mb-8">The project you're looking for doesn't exist.</p>
           <Link
-            to="/projects"
+            to="/project"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] text-[#0c0a12] px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all"
           >
             <ChevronLeft className="w-5 h-5" />
@@ -33,7 +33,7 @@ export default function ProjectDetail() {
     <div className="min-h-screen bg-white pt-32 pb-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
-          to="/projects"
+          to="/project"
           className="inline-flex items-center gap-2 text-[#ff3b8f] hover:text-[#ff7b00] font-semibold mb-8 transition-colors"
         >
           <ChevronLeft className="w-5 h-5" />

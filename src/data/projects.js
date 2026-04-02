@@ -163,6 +163,14 @@ technologies: ['Docker', 'AWS EC2', 'React', 'Node.js', 'MongoDB']
     description: 'Gesture based system using computer vision to launch and manage Docker containers automatically without manual commands.',
     technologies: ['Python', 'Docker', 'OpenCV']
 },
+{
+    id: 25,
+    name: 'DevBurn GitHub Activity Analyzer',
+    category: 'fullstack',
+    description: 'Analyzes GitHub activity to detect burnout risk and provide insights on work patterns and developer health balance.',
+    technologies: ['React', 'TailwindCSS', 'Flask', 'GitHub API']
+},
+
 
 
 

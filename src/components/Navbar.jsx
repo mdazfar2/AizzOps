@@ -57,7 +57,7 @@ export default function Navbar() {
                 Work
               </Link>
               <Link
-                to="/projects"
+                to="/project"
                 className="text-gray-800 hover:text-[#ff3b8f] transition-colors font-medium"
               >
                 Projects
@@ -107,7 +107,7 @@ export default function Navbar() {
               Work
             </Link>
             <Link
-              to="/projects"
+              to="/project"
               className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors"
               onClick={() => setIsOpen(false)}
             >
