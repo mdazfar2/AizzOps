@@ -61,7 +61,7 @@ technologies: ['Docker', 'AWS EC2', 'React', 'Node.js', 'MongoDB']
   },
 
   {
-    id: 9,
+    id: 8,
     name: 'Azure Web App CI/CD Pipeline',
     category: 'devops',
     subCategory: 'Cloud Services',
@@ -69,7 +69,7 @@ technologies: ['Docker', 'AWS EC2', 'React', 'Node.js', 'MongoDB']
     technologies: ['GitHub Actions', 'Azure Web App', 'Node.js', 'CI/CD']
 },
 {
-    id: 10,
+    id: 9,
     name: 'FingerConnect AI Web App',
     category: 'devops',
     subCategory: 'Cloud Services',
@@ -77,7 +77,7 @@ technologies: ['Docker', 'AWS EC2', 'React', 'Node.js', 'MongoDB']
     technologies: ['Python', 'AWS', 'Flask', 'OpenCV', 'Docker']
 },
 {
-    id: 11,
+    id: 10,
     name: 'EKS Jenkins Operator CI/CD Pipeline',
     category: 'devops',
     subCategory: 'CI/CD Pipeline',
