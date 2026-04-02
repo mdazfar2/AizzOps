@@ -12,6 +12,7 @@ import Works from './components/Works';
 import ProjectDetail from './components/project/ProjectDetail';
 import About from './components/About';
 import Work from './components/project/project';
+import HelpOpsHubDetail from './components/project/project_details/HelpOpsHubDetail';
 
 function Home() {
   return (
@@ -70,6 +71,16 @@ function App() {
             <>
               <Navbar />
               <Work />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/helpops-hub" 
+          element={
+            <>
+              <Navbar />
+              <HelpOpsHubDetail />
               <Footer />
             </>
           } 

@@ -3,6 +3,8 @@ export const projects = [
     id: '1', 
     name: 'HelpOps-Hub',
     category: 'fullstack',
+    visit: `https://github.com/mdazfar2`,
+    viewCode: `https://github.com/mdazfar2`,
     description: 'A collaborative DevOps platform for solving real-world errors and automating workflows with community-driven solutions.',
     technologies: ['Next.js', 'MongoDB', `TailwindCSS`, 'Docker', 'Kubernetes', 'CI/CD']
   },
