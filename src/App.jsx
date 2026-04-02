@@ -15,6 +15,20 @@ import Work from './components/project/project';
 import HelpOpsHubDetail from './components/project/project_details/HelpOpsHubDetail';
 import MernEksCicdDetail from './components/project/project_details/MernEksCicdDetail';
 import SpaceWebDetail from './components/project/project_details/SpaceWebDetail';
+import SpringBootGitOpsDetail from './components/project/project_details/SpringBootGitOpsDetail';
+import NetflixDevSecOpsDetail from './components/project/project_details/NetflixDevSecOpsDetail';
+import TwoTierFlaskDetail from './components/project/project_details/TwoTierFlaskDetail';
+import ThreeTierWanderlustDetail from './components/project/project_details/ThreeTierWanderlustDetail';
+import AzureWebAppCicdDetail from './components/project/project_details/AzureWebAppCicdDetail';
+import FingerConnectAiDetail from './components/project/project_details/FingerConnectAiDetail';
+import EksJenkinsOperatorDetail from './components/project/project_details/EksJenkinsOperatorDetail';
+import EzyShopDetail from './components/project/project_details/EzyShopDetail';
+import EywaDetail from './components/project/project_details/EywaDetail';
+import AzfarBroadcastDetail from './components/project/project_details/AzfarBroadcastDetail';
+import StudiumDetail from './components/project/project_details/StudiumDetail';
+import DfaVisualDetail from './components/project/project_details/DfaVisualDetail';
+import GfBanaoDetail from './components/project/project_details/GfBanaoDetail';
+import DbgmiTournamentDetail from './components/project/project_details/DbgmiTournamentDetail';
 
 function Home() {
   return (
@@ -103,6 +117,146 @@ function App() {
             <>
               <Navbar />
               <SpaceWebDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/spring-boot-gitops-cicd-pipeline" 
+          element={
+            <>
+              <Navbar />
+              <SpringBootGitOpsDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/netflix-devsecops-cicd-pipeline" 
+          element={
+            <>
+              <Navbar />
+              <NetflixDevSecOpsDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/two-tier-flask-app-deployment" 
+          element={
+            <>
+              <Navbar />
+              <TwoTierFlaskDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/three-tier-wanderlust-app-deployment" 
+          element={
+            <>
+              <Navbar />
+              <ThreeTierWanderlustDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/azure-webapp-cicd-pipeline" 
+          element={
+            <>
+              <Navbar />
+              <AzureWebAppCicdDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/fingerconnect-ai-web-app" 
+          element={
+            <>
+              <Navbar />
+              <FingerConnectAiDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/eks-jenkins-operator-cicd-pipeline" 
+          element={
+            <>
+              <Navbar />
+              <EksJenkinsOperatorDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/ezyshop-e-commerce-platform" 
+          element={
+            <>
+              <Navbar />
+              <EzyShopDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/eywa-private-communication-platform" 
+          element={
+            <>
+              <Navbar />
+              <EywaDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/azfar-broadcast-video-platform" 
+          element={
+            <>
+              <Navbar />
+              <AzfarBroadcastDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/studyrium-study-tracker" 
+          element={
+            <>
+              <Navbar />
+              <StudiumDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/dfa-visual-simulator" 
+          element={
+            <>
+              <Navbar />
+              <DfaVisualDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/gfbanao-learning-connection-platform" 
+          element={
+            <>
+              <Navbar />
+              <GfBanaoDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/dbgmi-tournament-platform" 
+          element={
+            <>
+              <Navbar />
+              <DbgmiTournamentDetail />
               <Footer />
             </>
           } 
