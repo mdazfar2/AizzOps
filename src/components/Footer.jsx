@@ -1,68 +1,42 @@
 import React from "react";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const navigate = useNavigate();
-  const location = useLocation();
 
-  const scrollToSection = (id) => {
-    if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(() => {
-        const element = document.getElementById(id);
-        if (element) element.scrollIntoView({ behavior: 'auto' });
-      }, 100);
-      return;
-    }
-
-    const element = document.getElementById(id);
-    if (element) element.scrollIntoView({ behavior: 'auto' });
-  };
+  const socialLinks = [
+    { label: 'GitHub', href: 'https://github.com/mdazfar2' },
+    { label: 'X', href: 'https://twitter.com/azfarxx_' },
+    { label: 'LinkedIn', href: 'http://www.linkedin.com/in/md-azfar-alam' },
+    { label: 'Blog', href: 'https://medium.com/@azfaralam/' },
+    { label: 'Community', href: 'https://discordapp.com/users/877531143610708028' },
+  ];
 
   return (
-    <footer className="bg-gray-100 text-gray-600 py-16 border-t border-gray-200">
-      <div className="max-w-4xl mx-auto text-center px-4">
-        
-        {/* Logo */}
-        <div className="flex justify-center mb-6">
-          <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <img
-              src="assets/img/Azfar-fevico.webp"
-              alt="logo"
-              className="w-10 h-10 object-contain"
-            />
-          </Link>
+    <footer className="border-t border-gray-200 bg-gray-100 px-4 py-8 text-gray-600">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 text-sm md:flex-row md:gap-8">
+        <p className="text-center md:text-left">© {currentYear} Azfar Alam</p>
+
+        <Link to="/privacy-policy" className="font-medium hover:text-black transition">
+          Privacy Policy
+        </Link>
+
+        <div className="flex flex-wrap items-center justify-center gap-6 md:justify-end md:gap-8">
+          {socialLinks.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-gray-700 transition hover:text-black"
+            >
+              {item.label}
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="h-3 w-3 opacity-70" />
+            </a>
+          ))}
         </div>
-
-        {/* Navigation */}
-        <div className="flex justify-center gap-8 text-sm tracking-wide mb-6">
-          <Link to="/about" className="hover:text-black transition">ABOUT</Link>
-          <Link to="/works" className="hover:text-black transition">WORKS</Link>
-          <Link to="/project" className="hover:text-black transition">PROJECTS</Link>
-          <button
-            type="button"
-            onClick={() => scrollToSection('interests')}
-            className="hover:text-black transition"
-          >
-            INTERESTS
-          </button>
-          <button
-            type="button"
-            onClick={() => scrollToSection('contact')}
-            className="hover:text-black transition"
-          >
-            CONTACT
-          </button>
-        </div>
-
-        {/* Copyright */}
-        <p className="text-sm">
-          © {currentYear}{" "}
-          <span className="text-blue-600 font-medium">Azfar Alam</span>{" "}
-          All rights reserved.
-        </p>
-
       </div>
     </footer>
   );

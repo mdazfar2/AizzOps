@@ -9,6 +9,7 @@ import Interests from './components/homepage/Interests';
 import Contact from './components/homepage/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import Works from './components/Works';
 import ProjectDetail from './components/project/ProjectDetail';
 import About from './components/About';
@@ -119,6 +120,16 @@ function App() {
               <Navbar />
               <Links />
               <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/privacy-policy" 
+          element={
+            <>
+              <Navbar />
+              <PrivacyPolicy />
+              
             </>
           } 
         />
