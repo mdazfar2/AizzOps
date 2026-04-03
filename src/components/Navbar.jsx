@@ -14,11 +14,11 @@ export default function Navbar() {
       // Timeout isliye taaki page load hone ke baad scroll trigger ho
       setTimeout(() => {
         const element = document.getElementById(id);
-        if (element) element.scrollIntoView({ behavior: 'smooth' });
+        if (element) element.scrollIntoView({ behavior: 'auto' });
       }, 100);
     } else {
       const element = document.getElementById(id);
-      if (element) element.scrollIntoView({ behavior: 'smooth' });
+      if (element) element.scrollIntoView({ behavior: 'auto' });
     }
     setIsOpen(false);
   };
@@ -70,7 +70,7 @@ export default function Navbar() {
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] text-[#0c0a12] px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300"
+                className="text-gray-800 hover:text-[#ff3b8f] transition-colors font-medium"
               >
                 Contact
               </button>
@@ -121,7 +121,7 @@ export default function Navbar() {
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="block w-full text-left px-3 py-2 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] text-[#0c0a12] rounded-lg mt-2 font-medium"
+              className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors"
             >
               Contact
             </button>

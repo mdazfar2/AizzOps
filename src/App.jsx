@@ -77,6 +77,7 @@ function App() {
             <>
               <Navbar />
               <About />
+              <Footer />
             </>
           } 
         />

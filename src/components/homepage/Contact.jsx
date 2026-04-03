@@ -1,6 +1,6 @@
 const Contact = () => {
 	return (
-		<section className="relative overflow-hidden bg-[#f9fafb] text-[#0f172a] py-24 px-6 md:px-12 lg:px-20">
+		<section id="contact" className="relative overflow-hidden bg-[#f9fafb] text-[#0f172a] py-24 px-6 md:px-12 lg:px-20">
 			{/* Soft glow accents */}
 			<div className="pointer-events-none absolute -left-20 top-10 h-72 w-72 rounded-full bg-purple-300/20 blur-3xl" />
 			<div className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-purple-200/30 blur-3xl" />
