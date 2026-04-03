@@ -14,6 +14,19 @@ export default function ProjectDetail() {
       }
     : undefined;
 
+  const toArray = (value) => {
+    if (Array.isArray(value)) return value.filter(Boolean);
+    return value ? [value] : [];
+  };
+
+  const getCategoryLabel = (category) => {
+    if (category === 'devops') return 'DevOps';
+    if (category === 'fullstack') return 'Full Stack';
+    if (category === 'ai-computer-vision') return 'AI / Computer Vision';
+    if (category === 'app-development') return 'Mob App Development';
+    return category;
+  };
+
   if (!project) {
     return (
       <div className="min-h-screen bg-white pt-32 pb-20">
@@ -33,9 +46,13 @@ export default function ProjectDetail() {
     );
   }
 
-  const relatedProjects = projects.filter(
-    p => p.category === project.category && p.id !== project.id
-  ).slice(0, 2);
+  const projectCategories = toArray(project.category);
+
+  const relatedProjects = projects.filter((p) => {
+    if (p.id === project.id) return false;
+    const relatedCategories = toArray(p.category);
+    return relatedCategories.some((category) => projectCategories.includes(category));
+  }).slice(0, 2);
 
   return (
     <div className="min-h-screen bg-white pt-32 pb-20">
@@ -62,7 +79,7 @@ export default function ProjectDetail() {
           <div className="flex items-center gap-4 mb-6">
             <h1 className="text-5xl font-bold text-gray-900">{project.name}</h1>
             <span className="px-4 py-2 bg-gradient-to-r from-[#fff5e8] to-[#e6f7ff] text-[#c75b00] font-semibold rounded-full">
-              {project.category === 'fullstack' ? 'Full Stack' : 'DevOps'}
+              {toArray(project.category).map(getCategoryLabel).join(' | ')}
             </span>
           </div>
 

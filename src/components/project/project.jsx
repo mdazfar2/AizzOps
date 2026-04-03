@@ -10,16 +10,46 @@ export default function Work() {
   const location = useLocation();
   const hasRestoredFocus = useRef('');
 
+  const toArray = (value) => {
+    if (Array.isArray(value)) {
+      return value.filter(Boolean);
+    }
+    return value ? [value] : [];
+  };
+
+  const getCategoryMeta = (category) => {
+    if (category === 'devops') {
+      return { label: 'DevOps', icon: Rocket, wrapperClassName: 'bg-purple-50 text-purple-600' };
+    }
+
+    if (category === 'app-development') {
+      return { label: 'Mob. ', icon: Code2, wrapperClassName: 'bg-blue-50 text-blue-600' };
+    }
+
+    if (category === 'ai-computer-vision') {
+      return { label: 'AI / Computer Vision', icon: Cloud, wrapperClassName: 'bg-cyan-50 text-cyan-600' };
+    }
+
+    return { label: 'Full Stack', icon: Code2, wrapperClassName: 'bg-blue-50 text-blue-600' };
+  };
+
   // Filtering Logic
   const filteredProjects = useMemo(() => {
     return projects.filter((project) => {
-      const categoryMatch = activeCategory === 'all' || project.category === activeCategory;
-      const subCategoryMatch = activeSubCategory === 'all' || 
-                               (project.subCategory && project.subCategory === activeSubCategory);
-      
+      const projectCategories = toArray(project.category);
+      const projectSubCategories = toArray(project.subCategory);
+
+      const categoryMatch = activeCategory === 'all' || projectCategories.includes(activeCategory);
+      const subCategoryMatch = activeSubCategory === 'all' || projectSubCategories.includes(activeSubCategory);
+
       if (activeCategory === 'devops' && activeSubCategory !== 'all') {
-        return project.category === 'devops' && subCategoryMatch;
+        return projectCategories.includes('devops') && subCategoryMatch;
       }
+
+      if (activeSubCategory !== 'all') {
+        return categoryMatch && subCategoryMatch;
+      }
+
       return categoryMatch;
     });
   }, [activeCategory, activeSubCategory]);
@@ -106,6 +136,18 @@ export default function Work() {
             >
               <Layers size={18} /> Full Stack
             </button>
+            <button
+              onClick={() => { setActiveCategory('ai-computer-vision'); setActiveSubCategory('all'); }}
+              className={`flex items-center gap-2 px-6 py-2.5 rounded-xl font-bold transition-all ${activeCategory === 'ai-computer-vision' ? 'bg-blue-600 text-white shadow-lg shadow-blue-100' : 'text-slate-500 hover:bg-slate-100'}`}
+            >
+              <Cloud size={18} /> AI / Computer Vision
+            </button>
+            <button
+              onClick={() => { setActiveCategory('app-development'); setActiveSubCategory('all'); }}
+              className={`flex items-center gap-2 px-6 py-2.5 rounded-xl font-bold transition-all ${activeCategory === 'app-development' ? 'bg-blue-600 text-white shadow-lg shadow-blue-100' : 'text-slate-500 hover:bg-slate-100'}`}
+            >
+              <Code2 size={18} /> Mob App Development
+            </button>
           </div>
 
           {/* DevOps Sub-Filtering (Only shows when DevOps is active) */}
@@ -132,24 +174,34 @@ export default function Work() {
         {/* --- Projects Grid (Modern Image-less Cards) --- */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
+            (() => {
+              const projectPath = project.detailPath || (project.name === 'HelpOps-Hub' ? '/project/helpops-hub' : `/work/${project.slug}`);
+              const projectCategories = toArray(project.category);
+              const categoryForCard = projectCategories.includes(activeCategory)
+                ? activeCategory
+                : projectCategories[0];
+              const categoryMeta = getCategoryMeta(categoryForCard);
+              const CategoryIcon = categoryMeta.icon;
+
+              return (
             <Link
               key={project.id}
-              to={project.detailPath || (project.name === 'HelpOps-Hub' ? '/project/helpops-hub' : `/work/${project.slug}`)}
+              to={projectPath}
               state={{
                 activeCategory,
                 activeSubCategory,
-                focusProjectPath: project.detailPath || (project.name === 'HelpOps-Hub' ? '/project/helpops-hub' : `/work/${project.slug}`),
+                focusProjectPath: projectPath,
               }}
-              data-project-path={project.detailPath || (project.name === 'HelpOps-Hub' ? '/project/helpops-hub' : `/work/${project.slug}`)}
-              className={`group flex flex-col bg-white border rounded-[2rem] p-8 transition-all duration-500 hover:border-blue-300 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-2 relative overflow-hidden ${focusedProjectPath === (project.detailPath || (project.name === 'HelpOps-Hub' ? '/project/helpops-hub' : `/work/${project.slug}`)) ? 'border-blue-400 shadow-[0_0_0_3px_rgba(59,130,246,0.18)]' : 'border-slate-200'}`}
+              data-project-path={projectPath}
+              className={`group flex flex-col bg-white border rounded-[2rem] p-8 transition-all duration-500 hover:border-blue-300 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-2 relative overflow-hidden ${focusedProjectPath === projectPath ? 'border-blue-400 shadow-[0_0_0_3px_rgba(59,130,246,0.18)]' : 'border-slate-200'}`}
             >
               {/* Card Header */}
               <div className="flex justify-between items-start mb-6">
-                <div className={`p-3 rounded-2xl ${project.category === 'devops' ? 'bg-purple-50 text-purple-600' : 'bg-blue-50 text-blue-600'}`}>
-                   {project.category === 'devops' ? <Rocket size={24} /> : <Code2 size={24} />}
+                <div className={`p-3 rounded-2xl ${categoryMeta.wrapperClassName}`}>
+                   <CategoryIcon size={24} />
                 </div>
                 <div className="flex gap-2 text-slate-400">
-                   <span className="text-xs font-mono font-medium uppercase tracking-widest">{project.category}</span>
+                   <span className="text-xs font-mono font-medium uppercase tracking-widest">{categoryMeta.label}</span>
                 </div>
               </div>
 
@@ -183,6 +235,8 @@ export default function Work() {
               {/* Subtle Background Decoration */}
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-slate-50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity blur-2xl" />
             </Link>
+              );
+            })()
           ))}
         </div>
       </div>

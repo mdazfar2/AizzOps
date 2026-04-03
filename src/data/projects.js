@@ -87,9 +87,18 @@ export const projects = [
     technologies: ['GitHub Actions', 'Azure Web App', 'Node.js', 'CI/CD']
 },
 {
+  id: 26,
+  name: 'Virtual AI Mouse',
+  category: 'ai-computer-vision',
+  detailPath: '/project/virtual-ai-mouse',
+  viewCode: `https://github.com/mdazfar2/AI-virtual-mouse`,
+  description: 'Control your computer using hand gestures with AI-powered real-time cursor tracking.',
+  technologies: ['Python', 'OpenCV', 'CVZone', 'Machine Learning']
+},
+{
     id: 9,
     name: 'FingerConnect AI Web App',
-    category: 'devops',
+    category: ['devops', `ai-computer-vision`],
     subCategory: 'Cloud Services',
     detailPath: '/project/fingerconnect-ai-web-app',
     viewCode: `https://github.com/mdazfar2/aws_AI_finger_webApp_live`,
@@ -149,7 +158,7 @@ export const projects = [
     id: 15,
     name: 'DFA Visual Simulator',
     category: 'fullstack',
-  detailPath: '/project/dfa-visual-simulator',
+    detailPath: '/project/dfa-visual-simulator',
     visit: `https://dfavisual.vercel.app/`,
     viewCode: `https://github.com/mdazfar2/DFA-Visual`,
     description: 'Interactive platform to build simulate and visualize DFA with animations and regex to DFA conversion.',
@@ -170,7 +179,7 @@ export const projects = [
     name: 'RapidGig Labs Agency Website',
     category: 'fullstack',
     visit: `https://rapidgig.vercel.app/`,
-  detailPath: '/project/rapidgig-labs-agency-website',
+    detailPath: '/project/rapidgig-labs-agency-website',
     description: 'Modern freelance agency website showcasing services and enabling clients to connect and learn about the platform.',
     technologies: ['React', 'TailwindCSS', 'TypeScript']
 },
@@ -178,7 +187,7 @@ export const projects = [
     id: 19,
     name: 'Certify Certificate Verification System',
     category: 'fullstack',
-  detailPath: '/project/certify-certificate-verification-system',
+    detailPath: '/project/certify-certificate-verification-system',
     visit: `https://certify-helpops.vercel.app/`,
     description: 'Certificate verification platform enabling users to validate certificates via unique IDs with admin panel management features.',
     technologies: ['React', 'TypeScript', 'MongoDB']
@@ -187,7 +196,7 @@ export const projects = [
     id: 20,
     name: 'DBGMI Tournament Platform',
     category: 'fullstack',
-  detailPath: '/project/dbgmi-tournament-platform',
+    detailPath: '/project/dbgmi-tournament-platform',
     viewCode: `https://github.com/mdazfar2/DBGMI-Playzone`,
     visit: `https://dbgmi.vercel.app/`,
     description: 'Gaming tournament platform frontend enabling users to explore matches register and view schedules with admin interface design.',
@@ -197,7 +206,7 @@ export const projects = [
     id: 21,
     name: 'JEC Forge Community Platform',
     category: 'fullstack',
-  detailPath: '/project/jec-forge-community-platform',
+    detailPath: '/project/jec-forge-community-platform',
     viewCode: `https://github.com/mdazfar2/jec-forge`,
     visit: `https://jecforge.vercel.app/`,
     description: 'Student community platform frontend showcasing projects events study materials and enabling participation with modern responsive design.',
@@ -206,8 +215,8 @@ export const projects = [
 {
     id: 23,
     name: 'Gesture Controlled Docker Launcher',
-    category: 'devops',
-  detailPath: '/project/gesture-controlled-docker-launcher',
+    category: ['devops', `ai-computer-vision`],
+    detailPath: '/project/gesture-controlled-docker-launcher',
     subCategory: 'Automation',
     viewCode:`https://github.com/mdazfar2/Docker_container_launch_by_finger`,
     visit: `https://medium.com/@azfaralam/scaling-docker-containers-with-fingers-5f818e2b8abe`,
@@ -215,13 +224,15 @@ export const projects = [
     technologies: ['Python', 'Docker', 'OpenCV']
 },
 {
-    id: 25,
-    name: 'DevBurn GitHub Activity Analyzer',
-    category: 'fullstack',
-  detailPath: '/project/devburn-github-activity-analyzer',
-    description: 'Analyzes GitHub activity to detect burnout risk and provide insights on work patterns and developer health balance.',
-    technologies: ['React', 'TailwindCSS', 'Flask', 'GitHub API']
+  id: 27,
+  name: "Azfar's First App",
+  category: 'app-development',
+  viewCode: `https://github.com/mdazfar2/AlmaAbierta`,
+  detailPath: '/project/azfars-first-app',
+  description: 'A social media mobile app to share thoughts, connect with users, and interact through posts, likes, and comments.',
+  technologies: ['Dart', 'Flutter', 'Firebase']
 },
+
 
 
 ];

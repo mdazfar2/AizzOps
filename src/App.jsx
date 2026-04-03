@@ -35,6 +35,8 @@ import CertifyDetail from './components/project/project_details/CertifyDetail';
 import JecForgeDetail from './components/project/project_details/JecForgeDetail';
 import GestureDockerDetail from './components/project/project_details/GestureDockerDetail';
 import DevBurnDetail from './components/project/project_details/DevBurnDetail';
+import VirtualAiMouseDetail from './components/project/project_details/VirtualAiMouseDetail';
+import AzfarsFirstAppDetail from './components/project/project_details/AzfarsFirstAppDetail';
 
 function Home() {
   return (
@@ -324,6 +326,26 @@ function App() {
             <>
               <Navbar />
               <DevBurnDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/virtual-ai-mouse" 
+          element={
+            <>
+              <Navbar />
+              <VirtualAiMouseDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/project/azfars-first-app" 
+          element={
+            <>
+              <Navbar />
+              <AzfarsFirstAppDetail />
               <Footer />
             </>
           } 
