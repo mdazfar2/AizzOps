@@ -1,11 +1,18 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useLocation, useParams, Link } from 'react-router-dom';
 import { ChevronLeft, ExternalLink, Github, ArrowRight } from 'lucide-react';
 import { projects } from '../../data/projects';
 
 export default function ProjectDetail() {
   const { projectSlug } = useParams();
+  const location = useLocation();
   const project = projects.find(p => p.slug === projectSlug);
+  const backState = location.state
+    ? {
+        ...location.state,
+        focusProjectPath: location.state.focusProjectPath || `/project/${projectSlug}`,
+      }
+    : undefined;
 
   if (!project) {
     return (
@@ -15,6 +22,7 @@ export default function ProjectDetail() {
           <p className="text-gray-600 mb-8">The project you're looking for doesn't exist.</p>
           <Link
             to="/project"
+            state={backState}
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] text-[#0c0a12] px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all"
           >
             <ChevronLeft className="w-5 h-5" />
@@ -34,6 +42,7 @@ export default function ProjectDetail() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
           to="/project"
+          state={backState}
           className="inline-flex items-center gap-2 text-[#ff3b8f] hover:text-[#ff7b00] font-semibold mb-8 transition-colors"
         >
           <ChevronLeft className="w-5 h-5" />

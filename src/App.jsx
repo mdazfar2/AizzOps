@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom';
+import { useLayoutEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Hero from './components/homepage/Hero';
 import Story from './components/homepage/Story';
 import Story2 from './components/homepage/Story2';
@@ -52,9 +53,20 @@ function Home() {
   );
 }
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route 

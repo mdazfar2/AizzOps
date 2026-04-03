@@ -1,11 +1,14 @@
-import { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Github, ArrowUpRight, Code2, Layers, Cpu, Globe, Rocket, GitBranch, ShieldCheck, Cloud } from 'lucide-react';
 import { projects } from '../../data/projects';
 
 export default function Work() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [activeSubCategory, setActiveSubCategory] = useState('all');
+  const [focusedProjectPath, setFocusedProjectPath] = useState('');
+  const location = useLocation();
+  const hasRestoredFocus = useRef('');
 
   // Filtering Logic
   const filteredProjects = useMemo(() => {
@@ -20,6 +23,40 @@ export default function Work() {
       return categoryMatch;
     });
   }, [activeCategory, activeSubCategory]);
+
+  useEffect(() => {
+    const navigationState = location.state;
+
+    if (!navigationState) {
+      return;
+    }
+
+    if (navigationState.activeCategory) {
+      setActiveCategory(navigationState.activeCategory);
+    }
+
+    if (navigationState.activeSubCategory) {
+      setActiveSubCategory(navigationState.activeSubCategory);
+    }
+
+    if (navigationState.focusProjectPath) {
+      setFocusedProjectPath(navigationState.focusProjectPath);
+      hasRestoredFocus.current = '';
+    }
+  }, [location.state]);
+
+  useEffect(() => {
+    if (!focusedProjectPath || hasRestoredFocus.current === focusedProjectPath) {
+      return;
+    }
+
+    const card = document.querySelector(`[data-project-path="${focusedProjectPath}"]`);
+
+    if (card) {
+      card.scrollIntoView({ behavior: 'auto', block: 'center' });
+      hasRestoredFocus.current = focusedProjectPath;
+    }
+  }, [focusedProjectPath, filteredProjects]);
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] pt-32 pb-20">
@@ -98,7 +135,13 @@ export default function Work() {
             <Link
               key={project.id}
               to={project.detailPath || (project.name === 'HelpOps-Hub' ? '/project/helpops-hub' : `/work/${project.slug}`)}
-              className="group flex flex-col bg-white border border-slate-200 rounded-[2rem] p-8 transition-all duration-500 hover:border-blue-300 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-2 relative overflow-hidden"
+              state={{
+                activeCategory,
+                activeSubCategory,
+                focusProjectPath: project.detailPath || (project.name === 'HelpOps-Hub' ? '/project/helpops-hub' : `/work/${project.slug}`),
+              }}
+              data-project-path={project.detailPath || (project.name === 'HelpOps-Hub' ? '/project/helpops-hub' : `/work/${project.slug}`)}
+              className={`group flex flex-col bg-white border rounded-[2rem] p-8 transition-all duration-500 hover:border-blue-300 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-2 relative overflow-hidden ${focusedProjectPath === (project.detailPath || (project.name === 'HelpOps-Hub' ? '/project/helpops-hub' : `/work/${project.slug}`)) ? 'border-blue-400 shadow-[0_0_0_3px_rgba(59,130,246,0.18)]' : 'border-slate-200'}`}
             >
               {/* Card Header */}
               <div className="flex justify-between items-start mb-6">

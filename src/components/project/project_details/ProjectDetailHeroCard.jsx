@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { ArrowLeft, Target } from 'lucide-react';
+import { projects } from '../../../data/projects';
 import ProjectActionButtons from './ProjectActionButtons';
 
 export default function ProjectDetailHeroCard({
@@ -11,12 +12,24 @@ export default function ProjectDetailHeroCard({
   goalTitle,
   goalDescription,
 }) {
+  const location = useLocation();
+  const project = projects.find((item) => item.name === projectName);
+  const navigationState = location.state || {};
+
+  const backState = project
+    ? {
+        ...navigationState,
+        focusProjectPath: project.detailPath || navigationState.focusProjectPath || '',
+      }
+    : navigationState;
+
   return (
     <div className="relative overflow-hidden rounded-3xl border border-[#d7e7ff] bg-white/90 p-8 shadow-[0_24px_70px_-35px_rgba(25,60,130,0.35)] sm:p-12">
       <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
         <div className="flex flex-col items-start gap-4">
           <Link
             to="/project"
+            state={backState}
             className="inline-flex items-center gap-2 text-sm font-semibold text-[#ff3b8f] hover:text-[#ff7b00] transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
