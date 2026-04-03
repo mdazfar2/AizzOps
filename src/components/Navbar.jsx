@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMoreOpen, setIsMoreOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -62,18 +63,64 @@ export default function Navbar() {
               >
                 Projects
               </Link>
-              <button
-                onClick={() => scrollToSection('interests')}
+              <Link
+                to="/links"
                 className="text-gray-800 hover:text-[#ff3b8f] transition-colors font-medium"
               >
-                Interests
-              </button>
+                Links
+              </Link>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-gray-800 hover:text-[#ff3b8f] transition-colors font-medium"
               >
                 Contact
               </button>
+              
+              {/* More Dropdown */}
+              <div className="relative">
+                <button
+                  onMouseEnter={() => setIsMoreOpen(true)}
+                  onMouseLeave={() => setIsMoreOpen(false)}
+                  onClick={() => setIsMoreOpen(!isMoreOpen)}
+                  className="flex items-center gap-2 text-gray-800 hover:text-[#ff3b8f] transition-colors font-medium"
+                >
+                  More
+                  <ChevronDown size={18} className={`transition-transform ${isMoreOpen ? 'rotate-180' : ''}`} />
+                </button>
+                
+                {isMoreOpen && (
+                  <div 
+                    className="absolute left-0 mt-0 w-48 bg-white border border-gray-200 rounded-lg shadow-lg py-2"
+                    onMouseEnter={() => setIsMoreOpen(true)}
+                    onMouseLeave={() => setIsMoreOpen(false)}
+                  >
+                    <Link
+                      to="/howitworks"
+                      className="block px-4 py-2 text-gray-800 hover:bg-[#fff2e6] hover:text-[#ff3b8f] transition-colors font-medium"
+                    >
+                      Work Process
+                    </Link>
+                    <button
+                      onClick={() => {
+                        scrollToSection('testimonials');
+                        setIsMoreOpen(false);
+                      }}
+                      className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-[#fff2e6] hover:text-[#ff3b8f] transition-colors font-medium"
+                    >
+                      Testimonials
+                    </button>
+                    <button
+                      onClick={() => {
+                        scrollToSection('interests');
+                        setIsMoreOpen(false);
+                      }}
+                      className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-[#fff2e6] hover:text-[#ff3b8f] transition-colors font-medium"
+                    >
+                      Interests
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
 
@@ -113,18 +160,65 @@ export default function Navbar() {
             >
               Projects
             </Link>
-            <button
-              onClick={() => scrollToSection('interests')}
+            <Link
+              to="/links"
               className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors"
+              onClick={() => setIsOpen(false)}
             >
-              Interests
-            </button>
+              Links
+            </Link>
             <button
               onClick={() => scrollToSection('contact')}
               className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors"
             >
               Contact
             </button>
+            
+            {/* Mobile More Menu */}
+            <div>
+              <button
+                onClick={() => setIsMoreOpen(!isMoreOpen)}
+                className="flex items-center gap-2 w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors font-medium"
+              >
+                More
+                <ChevronDown size={18} className={`transition-transform ${isMoreOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {isMoreOpen && (
+                <div className="pl-4 space-y-1">
+                  <Link
+                    to="/howitworks"
+                    className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors"
+                    onClick={() => {
+                      setIsMoreOpen(false);
+                      setIsOpen(false);
+                    }}
+                  >
+                    Work Process
+                  </Link>
+                  <button
+                    onClick={() => {
+                      scrollToSection('testimonials');
+                      setIsMoreOpen(false);
+                      setIsOpen(false);
+                    }}
+                    className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors"
+                  >
+                    Testimonials
+                  </button>
+                  <button
+                    onClick={() => {
+                      scrollToSection('interests');
+                      setIsMoreOpen(false);
+                      setIsOpen(false);
+                    }}
+                    className="block w-full text-left px-3 py-2 text-gray-800 hover:bg-[#fff2e6] rounded-lg transition-colors"
+                  >
+                    Interests
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}

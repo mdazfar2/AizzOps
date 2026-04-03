@@ -37,6 +37,7 @@ import GestureDockerDetail from './components/project/project_details/GestureDoc
 import DevBurnDetail from './components/project/project_details/DevBurnDetail';
 import VirtualAiMouseDetail from './components/project/project_details/VirtualAiMouseDetail';
 import AzfarsFirstAppDetail from './components/project/project_details/AzfarsFirstAppDetail';
+import Links from './components/Links';
 
 function Home() {
   return (
@@ -107,6 +108,16 @@ function App() {
             <>
               <Navbar />
               <Work />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/links" 
+          element={
+            <>
+              <Navbar />
+              <Links />
               <Footer />
             </>
           } 
@@ -347,6 +358,16 @@ function App() {
             <>
               <Navbar />
               <AzfarsFirstAppDetail />
+              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/howitworks" 
+          element={
+            <>
+              <Navbar />
+              <Howitworks />
               <Footer />
             </>
           } 

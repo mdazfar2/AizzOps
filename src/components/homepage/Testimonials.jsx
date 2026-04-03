@@ -75,7 +75,7 @@ export default function Testimonials() {
   const item = testimonials[active];
 
   return (
-    <section className="bg-[#f8f9fc] text-[#0f172a] px-6 md:px-10 lg:px-16 py-20 md:py-24 font-sans">
+    <section id="testimonials" className="bg-[#f8f9fc] text-[#0f172a] px-6 md:px-10 lg:px-16 py-20 md:py-24 font-sans">
       <div className="max-w-6xl mx-auto space-y-12">
 
         <div className="h-px w-full bg-[#e5e7eb]" />

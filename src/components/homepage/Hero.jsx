@@ -71,13 +71,15 @@ export default function Hero() {
             Get in touch
           </a>
 
-          <Link
-            to="/project"
+          <a
+            href="https://discord.com/invite/UWTrRhqywt"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 text-[#ff3b8f] font-medium transition hover:text-[#ff7b00]"
           >
             Join Community
             <ArrowRight className="w-5 h-5" />
-          </Link>
+          </a>
         </div>
       </div>
     </section>

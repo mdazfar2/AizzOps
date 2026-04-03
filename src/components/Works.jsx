@@ -4,7 +4,7 @@ const experiences = [
   [
     {
       company: "GitHub PR Expert",
-      org: "Magic",
+      org: "Magic.dev",
       role: "Part-time",
       period: "Aug 2025 – Jan 2026 · 6 mos",
       location: "Remote",
