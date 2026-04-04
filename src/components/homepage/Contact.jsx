@@ -30,12 +30,14 @@ const Contact = () => {
 					<p className="text-lg text-gray-500">And make an impact</p>
 
 					<a
-						href="#"
-						className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#9b5cff] via-[#8c4bff] to-[#7d3cff] px-6 py-3 text-lg font-semibold text-white shadow-[0_20px_40px_rgba(124,67,255,0.25)] transition duration-200 hover:scale-[1.03] hover:shadow-[0_24px_46px_rgba(124,67,255,0.35)]"
+						href="https://cal.com/azfar-alam-4my9ak/30min"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="inline-flex items-center justify-between gap-4 rounded-full bg-[#0f172a] px-8 py-3 text-lg font-semibold text-white shadow-lg shadow-black/20 transition duration-300 hover:bg-black hover:shadow-lg hover:shadow-black/30 hover:scale-105"
 					>
 						<span>Book a call</span>
-						<span className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#6c3bff] shadow-inner">
-							<FontAwesomeIcon icon={faCalendarDays} />
+						<span className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#0f172a]">
+							<FontAwesomeIcon icon={faCalendarDays} className="text-base" />
 						</span>
 					</a>
 				</div>
