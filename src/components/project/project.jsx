@@ -1,6 +1,20 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Github, ArrowUpRight, Code2, Layers, Cpu, Globe, Rocket, GitBranch, ShieldCheck, Cloud } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faArrowUpRightFromSquare,
+  faCode,
+  faLayerGroup,
+  faMicrochip,
+  faGlobe,
+  faRocket,
+  faCodeBranch,
+  faShieldHalved,
+  faCloud,
+  faBrain
+} from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 import { projects } from '../../data/projects';
 
 export default function Work() {
@@ -19,18 +33,18 @@ export default function Work() {
 
   const getCategoryMeta = (category) => {
     if (category === 'devops') {
-      return { label: 'DevOps', icon: Rocket, wrapperClassName: 'bg-purple-50 text-purple-600' };
+      return { label: 'DevOps', icon: faRocket, wrapperClassName: 'bg-purple-50 text-purple-600' };
     }
 
     if (category === 'app-development') {
-      return { label: 'Mob. ', icon: Code2, wrapperClassName: 'bg-blue-50 text-blue-600' };
+      return { label: 'Mob. ', icon: faCode, wrapperClassName: 'bg-blue-50 text-blue-600' };
     }
 
     if (category === 'ai-computer-vision') {
-      return { label: 'AI / Computer Vision', icon: Cloud, wrapperClassName: 'bg-cyan-50 text-cyan-600' };
+      return { label: 'AI / Computer Vision', icon: faBrain, wrapperClassName: 'bg-cyan-50 text-cyan-600' };
     }
 
-    return { label: 'Full Stack', icon: Code2, wrapperClassName: 'bg-blue-50 text-blue-600' };
+    return { label: 'Full Stack', icon: faCode, wrapperClassName: 'bg-blue-50 text-blue-600' };
   };
 
   // Filtering Logic
@@ -108,9 +122,9 @@ export default function Work() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-900 text-white rounded-xl font-semibold hover:bg-blue-600 transition-all duration-300 shadow-lg shadow-slate-200"
           >
-            <Github size={18} />
+            <FontAwesomeIcon icon={faGithub} />
             My GitHub Profile
-            <ArrowUpRight size={14} />
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
           </a>
         </div>
 
@@ -128,25 +142,25 @@ export default function Work() {
               onClick={() => { setActiveCategory('devops'); setActiveSubCategory('all'); }}
               className={`flex items-center gap-2 px-6 py-2.5 rounded-xl font-bold transition-all ${activeCategory === 'devops' ? 'bg-blue-600 text-white shadow-lg shadow-blue-100' : 'text-slate-500 hover:bg-slate-100'}`}
             >
-              <Cpu size={18} /> DevOps
+              <FontAwesomeIcon icon={faMicrochip} /> DevOps
             </button>
             <button
               onClick={() => { setActiveCategory('fullstack'); setActiveSubCategory('all'); }}
               className={`flex items-center gap-2 px-6 py-2.5 rounded-xl font-bold transition-all ${activeCategory === 'fullstack' ? 'bg-blue-600 text-white shadow-lg shadow-blue-100' : 'text-slate-500 hover:bg-slate-100'}`}
             >
-              <Layers size={18} /> Full Stack
+              <FontAwesomeIcon icon={faLayerGroup} /> Full Stack
             </button>
             <button
               onClick={() => { setActiveCategory('ai-computer-vision'); setActiveSubCategory('all'); }}
               className={`flex items-center gap-2 px-6 py-2.5 rounded-xl font-bold transition-all ${activeCategory === 'ai-computer-vision' ? 'bg-blue-600 text-white shadow-lg shadow-blue-100' : 'text-slate-500 hover:bg-slate-100'}`}
             >
-              <Cloud size={18} /> AI / Computer Vision
+              <FontAwesomeIcon icon={faBrain} /> AI / Computer Vision
             </button>
             <button
               onClick={() => { setActiveCategory('app-development'); setActiveSubCategory('all'); }}
               className={`flex items-center gap-2 px-6 py-2.5 rounded-xl font-bold transition-all ${activeCategory === 'app-development' ? 'bg-blue-600 text-white shadow-lg shadow-blue-100' : 'text-slate-500 hover:bg-slate-100'}`}
             >
-              <Code2 size={18} /> Mob App Development
+              <FontAwesomeIcon icon={faCode} /> Mob App Development
             </button>
           </div>
 
@@ -181,7 +195,6 @@ export default function Work() {
                 ? activeCategory
                 : projectCategories[0];
               const categoryMeta = getCategoryMeta(categoryForCard);
-              const CategoryIcon = categoryMeta.icon;
 
               return (
             <Link
@@ -198,7 +211,7 @@ export default function Work() {
               {/* Card Header */}
               <div className="flex justify-between items-start mb-6">
                 <div className={`p-3 rounded-2xl ${categoryMeta.wrapperClassName}`}>
-                   <CategoryIcon size={24} />
+                   <FontAwesomeIcon icon={categoryMeta.icon} />
                 </div>
                 <div className="flex gap-2 text-slate-400">
                    <span className="text-xs font-mono font-medium uppercase tracking-widest">{categoryMeta.label}</span>
@@ -225,10 +238,10 @@ export default function Work() {
               {/* Footer */}
               <div className="flex items-center justify-between pt-6 border-t border-slate-50">
                 <span className="text-xs font-bold text-slate-900 inline-flex items-center gap-1">
-                  VIEW CASE STUDY <ArrowUpRight size={14} />
+                  VIEW CASE STUDY <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </span>
                 {project.github && (
-                  <Github size={18} className="text-slate-300 group-hover:text-slate-900 transition-colors" />
+                  <FontAwesomeIcon icon={faGithub} className="text-slate-300 group-hover:text-slate-900 transition-colors" />
                 )}
               </div>
               
