@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import { Github, Linkedin, FileText, Mail } from 'lucide-react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 export default function About() {
 
 	// track text elements for reveal-on-scroll
@@ -220,7 +221,7 @@ export default function About() {
 								rel="noreferrer"
 								className="flex items-center gap-3 text-black/70 hover:text-black transition"
 							>
-								<Github size={18} />
+								<FontAwesomeIcon icon={faGithub} />
 								<span>GitHub Profile</span>
 							</a>
 
@@ -230,7 +231,7 @@ export default function About() {
 								rel="noreferrer"
 								className="flex items-center gap-3 text-black/70 hover:text-black transition"
 							>
-								<Linkedin size={18} />
+								<FontAwesomeIcon icon={faLinkedin} />
 								<span>LinkedIn Profile</span>
 							</a>
 
@@ -240,7 +241,7 @@ export default function About() {
 								rel="noreferrer"
 								className="flex items-center gap-3 text-black/70 hover:text-black transition"
 							>
-								<FileText size={18} />
+								<FontAwesomeIcon icon={faFileAlt} />
 								<span>Blog Profile</span>
 							</a>
 
@@ -249,7 +250,7 @@ export default function About() {
 									href="mailto:azfaralam.ops@gmail.com"
 									className="flex items-center gap-3 text-black/70 hover:text-black transition"
 								>
-									<Mail size={18} />
+									<FontAwesomeIcon icon={faEnvelope} />
 									<span>azfaralam.ops@gmail.com</span>
 								</a>
 							</div>

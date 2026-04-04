@@ -1,31 +1,34 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 import {
-  Github,
-  Linkedin,
-  Mail,
-  Globe,
-  PenSquare,
-  Heart,
-  Trophy,
-  Sparkles,
-} from 'lucide-react';
+  faEnvelope,
+  faGlobe,
+  faPenNib,
+  faHeart,
+  faTrophy,
+  faStar
+} from '@fortawesome/free-solid-svg-icons';
+
 
 const links = [
-  { label: 'GitHub', href: 'https://github.com/mdazfar2', icon: Github },
-  { label: 'X', href: 'https://x.com/azfarxx_', icon: Globe },
-  { label: 'LinkedIn', href: 'http://www.linkedin.com/in/md-azfar-alam', icon: Linkedin },
-  { label: 'Medium', href: 'https://medium.com/@azfaralam', icon: PenSquare },
-  { label: 'Discord', href: 'https://discordapp.com/users/877531143610708028', icon: Globe },
-  { label: 'Daily', href: 'https://app.daily.dev/azfaralam/', icon: Sparkles },
-  { label: 'Hashnode', href: 'https://azfaralam.hashnode.dev/', icon: Globe },
-  { label: 'Dribbble', href: 'https://dribbble.com/mdazfar2/', icon: Globe },
-  { label: 'GitHub Sponsors', href: 'https://github.com/sponsors', icon: Heart },
-  { label: 'Leetcode', href: 'https://leetcode.com/u/mdazfar2', icon: Trophy },
-  { label: 'Peerlist', href: 'https://peerlist.io/mdazfar2', icon: Globe },
-  { label: 'Polywork', href: 'https://www.polywork.com/mdazfar2', icon: Globe },
-  { label: 'Showwcase', href: 'https://www.showwcase.com/mdazfar2', icon: Globe },
-  { label: 'GeeksforGeeks', href: 'https://auth.geeksforgeeks.org/user/mdazfar2', icon: Globe },
-  { label: 'Email', href: 'mailto:azfaralam.ops@gmail.com', icon: Mail },
+  { label: 'GitHub', href: 'https://github.com/mdazfar2', icon: faGithub },
+  { label: 'X', href: 'https://x.com/azfarxx_', icon: faGlobe },
+  { label: 'LinkedIn', href: 'http://www.linkedin.com/in/md-azfar-alam', icon: faLinkedin },
+  { label: 'Medium', href: 'https://medium.com/@azfaralam', icon: faPenNib },
+  { label: 'Discord', href: 'https://discordapp.com/users/877531143610708028', icon: faGlobe },
+  { label: 'Daily', href: 'https://app.daily.dev/azfaralam/', icon: faStar },
+  { label: 'Hashnode', href: 'https://azfaralam.hashnode.dev/', icon: faGlobe },
+  { label: 'Dribbble', href: 'https://dribbble.com/mdazfar2/', icon: faGlobe },
+  { label: 'GitHub Sponsors', href: 'https://github.com/sponsors', icon: faHeart },
+  { label: 'Leetcode', href: 'https://leetcode.com/u/mdazfar2', icon: faTrophy },
+  { label: 'Peerlist', href: 'https://peerlist.io/mdazfar2', icon: faGlobe },
+  { label: 'Polywork', href: 'https://www.polywork.com/mdazfar2', icon: faGlobe },
+  { label: 'Showwcase', href: 'https://www.showwcase.com/mdazfar2', icon: faGlobe },
+  { label: 'GeeksforGeeks', href: 'https://auth.geeksforgeeks.org/user/mdazfar2', icon: faGlobe },
+  { label: 'Email', href: 'mailto:azfaralam.ops@gmail.com', icon: faEnvelope },
 ];
 
 export default function Links() {
@@ -69,7 +72,6 @@ export default function Links() {
 
           <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3">
             {links.map((item) => {
-              const Icon = item.icon;
               return (
                 <a
                   key={item.label}
@@ -78,7 +80,7 @@ export default function Links() {
                   rel={item.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
                   className="group inline-flex items-center gap-2 border-b border-[#c7ccd6] pb-[2px] text-sm text-[#4b5565] transition-all duration-200 hover:text-black hover:border-black"
                 >
-                  <Icon className="h-4 w-4 text-[#6b7280] group-hover:text-black" />
+                  <FontAwesomeIcon icon={item.icon} className="h-4 w-4 text-[#6b7280] group-hover:text-black" />
                   <span className="font-medium">{item.label}</span>
                 </a>
               );

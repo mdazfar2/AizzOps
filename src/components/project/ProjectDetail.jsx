@@ -1,6 +1,17 @@
 import React from 'react';
 import { useLocation, useParams, Link } from 'react-router-dom';
-import { ChevronLeft, ExternalLink, Github, ArrowRight } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { 
+  faChevronLeft,
+  faArrowUpRightFromSquare,
+  faArrowRight
+} from '@fortawesome/free-solid-svg-icons';
+
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
+
+
 import { projects } from '../../data/projects';
 
 export default function ProjectDetail() {
@@ -38,7 +49,7 @@ export default function ProjectDetail() {
             state={backState}
             className="inline-flex items-center gap-2 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] text-[#0c0a12] px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all"
           >
-            <ChevronLeft className="w-5 h-5" />
+            <FontAwesomeIcon icon={faChevronLeft} />
             Back to Projects
           </Link>
         </div>
@@ -62,7 +73,7 @@ export default function ProjectDetail() {
           state={backState}
           className="inline-flex items-center gap-2 text-[#ff3b8f] hover:text-[#ff7b00] font-semibold mb-8 transition-colors"
         >
-          <ChevronLeft className="w-5 h-5" />
+          <FontAwesomeIcon icon={faChevronLeft} />
           Back to Projects
         </Link>
 
@@ -125,7 +136,7 @@ export default function ProjectDetail() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-[#ff7b00] via-[#ff3b8f] to-[#19c3ff] text-[#0c0a12] px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all transform hover:scale-105"
               >
-                <ExternalLink className="w-5 h-5" />
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 View Live
               </a>
             )}
@@ -136,7 +147,7 @@ export default function ProjectDetail() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#0c0a12] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#1a1224] transition-all transform hover:scale-105"
               >
-                <Github className="w-5 h-5" />
+                <FontAwesomeIcon icon={faGithub} />
                 GitHub
               </a>
             )}
@@ -169,7 +180,7 @@ export default function ProjectDetail() {
                     </p>
                     <div className="mt-4 flex items-center text-[#ff3b8f] font-semibold group-hover:gap-2 transition-all">
                       View Project
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      <FontAwesomeIcon icon={faArrowRight} className="ml-2 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
                 </Link>

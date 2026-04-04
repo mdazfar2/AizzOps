@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDays, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 const Contact = () => {
 	return (
 		<section id="contact" className="relative overflow-hidden bg-[#f9fafb] text-[#0f172a] py-24 px-6 md:px-12 lg:px-20">
@@ -32,7 +35,7 @@ const Contact = () => {
 					>
 						<span>Book a call</span>
 						<span className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#6c3bff] shadow-inner">
-							<span className="-translate-y-[1px]">↗</span>
+							<FontAwesomeIcon icon={faCalendarDays} />
 						</span>
 					</a>
 				</div>
@@ -71,7 +74,7 @@ const Contact = () => {
 							className="group inline-flex items-center gap-3 text-sm font-medium text-gray-600 transition hover:text-purple-500"
 						>
 							<span className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 text-base">
-								✉
+								<FontAwesomeIcon icon={faEnvelope} />
 							</span>
 							<span className="underline decoration-dotted underline-offset-4 group-hover:decoration-purple-500">
 								azfaralam.ops@gmail.com
