@@ -236,7 +236,7 @@ export default function About() {
 							</a>
 
 							<a
-								href="https://dev.to/mdazfar2"
+								href="https://medium.com/@azfaralam"
 								target="_blank"
 								rel="noreferrer"
 								className="flex items-center gap-3 text-black/70 hover:text-black transition"

@@ -113,7 +113,6 @@ export default function Work() {
           </h1>
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-8">
             I’m constantly building new projects that people can actually use. I brainstorm a random idea and start implementing it right away. 
-            
           </p>
           
           <a 
@@ -164,11 +163,10 @@ export default function Work() {
             </button>
           </div>
 
-          {/* DevOps Sub-Filtering (Only shows when DevOps is active) */}
+          {/* DevOps Sub-Filtering */}
           {activeCategory === 'devops' && (
             <div className="flex flex-wrap gap-2 animate-in fade-in slide-in-from-top-2 duration-300">
-              {/* Yahan 'Automation' add kar diya hai */}
-              {['all', , 'Automation', 'CI/CD Pipeline', 'Monitoring & Logging', 'Cloud Services'].map((sub) => (
+              {['all', 'Automation', 'CI/CD Pipeline', 'Monitoring & Logging', 'Cloud Services'].map((sub) => (
                 <button
                   key={sub}
                   onClick={() => setActiveSubCategory(sub)}
@@ -185,8 +183,9 @@ export default function Work() {
           )}
         </div>
 
-        {/* --- Projects Grid (Modern Image-less Cards) --- */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* --- Projects Grid --- */}
+        {/* Adjusted Gap to 6 for tighter feel */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project) => (
             (() => {
               const projectPath = project.detailPath || (project.name === 'HelpOps-Hub' ? '/project/helpops-hub' : `/work/${project.slug}`);
@@ -206,11 +205,12 @@ export default function Work() {
                 focusProjectPath: projectPath,
               }}
               data-project-path={projectPath}
-              className={`group flex flex-col bg-white border rounded-[2rem] p-8 transition-all duration-500 hover:border-blue-300 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-2 relative overflow-hidden ${focusedProjectPath === projectPath ? 'border-blue-400 shadow-[0_0_0_3px_rgba(59,130,246,0.18)]' : 'border-slate-200'}`}
+              /* Change: Padding reduced to p-6, rounded adjusted to 2xl, shadow refined */
+              className={`group flex flex-col bg-white border rounded-2xl p-6 transition-all duration-500 hover:border-blue-300 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1.5 relative overflow-hidden h-full ${focusedProjectPath === projectPath ? 'border-blue-400 shadow-[0_0_0_3px_rgba(59,130,246,0.18)]' : 'border-slate-200'}`}
             >
-              {/* Card Header */}
-              <div className="flex justify-between items-start mb-6">
-                <div className={`p-3 rounded-2xl ${categoryMeta.wrapperClassName}`}>
+              {/* Card Header - reduced margin */}
+              <div className="flex justify-between items-start mb-4">
+                <div className={`p-2.5 rounded-xl ${categoryMeta.wrapperClassName}`}>
                    <FontAwesomeIcon icon={categoryMeta.icon} />
                 </div>
                 <div className="flex gap-2 text-slate-400">
@@ -218,16 +218,16 @@ export default function Work() {
                 </div>
               </div>
 
-              {/* Title & Description */}
-              <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors leading-tight">
+              {/* Title & Description - text remains same, margins reduced */}
+              <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors leading-tight">
                 {project.name}
               </h3>
-              <p className="text-slate-500 text-sm leading-relaxed mb-8 flex-grow">
+              <p className="text-slate-500 text-sm leading-relaxed mb-6 flex-grow">
                 {project.description}
               </p>
 
-              {/* Tech Stack Pills */}
-              <div className="flex flex-wrap gap-2 mb-8">
+              {/* Tech Stack Pills - reduced margin */}
+              <div className="flex flex-wrap gap-2 mb-6">
                 {project.technologies.slice(0, 4).map((tech, idx) => (
                   <span key={idx} className="px-3 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold uppercase tracking-wider rounded-md border border-slate-100">
                     {tech}
@@ -235,8 +235,8 @@ export default function Work() {
                 ))}
               </div>
 
-              {/* Footer */}
-              <div className="flex items-center justify-between pt-6 border-t border-slate-50">
+              {/* Footer - reduced padding top */}
+              <div className="flex items-center justify-between pt-5 border-t border-slate-50">
                 <span className="text-xs font-bold text-slate-900 inline-flex items-center gap-1">
                   VIEW CASE STUDY <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </span>
@@ -245,7 +245,6 @@ export default function Work() {
                 )}
               </div>
               
-              {/* Subtle Background Decoration */}
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-slate-50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity blur-2xl" />
             </Link>
               );
